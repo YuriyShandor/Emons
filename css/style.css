@@ -34,6 +34,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 .header .row {
@@ -58,6 +59,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin-top: -25px;
+  z-index: 120;
 }
 
 .header .emons-logo .menu-icon {
@@ -85,8 +87,172 @@ body {
 }
 
 .header .screen-devider {
-  max-width: 100%;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.header-nav {
+  width: 35vw;
+  min-height: 100vh;
+  background: rgba(255, 224, 148, 0.7);
+  position: fixed;
+  top: 0;
+  left: -36vw;
+  z-index: 105;
+  padding-top: 175px;
+  padding-bottom: 25px;
+  -webkit-transition: all, .7s ease-in;
+  transition: all, .7s ease-in;
+}
+
+.header-nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.header-nav ul li {
+  padding: 10px 0;
+  position: relative;
+  padding-left: 20%;
+}
+
+.header-nav ul li:before {
+  display: block;
+  content: '';
+  width: 70%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(../img/menu-item__devider.png);
+}
+
+.header-nav ul li a {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all, .3s;
+  transition: all, .3s;
+}
+
+.header-nav ul li a:hover {
+  color: #cc0000;
+}
+
+.header-nav_show {
+  left: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  .header .emons-logo {
+    margin-top: -25px;
+  }
+  .header h3 {
+    font-size: 24px;
+  }
+  .header h3 .red {
+    font-size: 30px;
+  }
+  .header-number {
+    font-size: 28px;
+  }
+  .header-email {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  .header .emons-logo {
+    margin-left: 50%;
+    margin-top: 0px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+  .header .emons-logo .logo {
+    width: 150px;
+  }
+  .header .emons-logo .logo img {
+    width: 100%;
+  }
+  .header h3 {
+    font-size: 24px;
+  }
+  .header h3 .red {
+    font-size: 30px;
+  }
+  .header-number {
+    font-size: 28px;
+  }
+  .header-email {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  .header .emons-logo {
+    margin-bottom: 20px;
+  }
+  .header .emons-logo .logo {
+    width: 120px;
+  }
+  .header h3 {
+    font-size: 20px;
+  }
+  .header h3 .red {
+    font-size: 24px;
+  }
+  .header-number {
+    font-size: 22px;
+  }
+  .header-email {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  .header .row {
+    padding: 0 15px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .header .emons-logo {
+    margin-bottom: 15px;
+  }
+  .header .emons-logo .logo {
+    width: 100px;
+  }
+  .header h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .header h3 .red {
+    font-size: 22px;
+  }
+  .header-number {
+    font-size: 20px;
+  }
+  .header-email {
+    font-size: 18px;
+  }
 }
