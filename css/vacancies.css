@@ -583,11 +583,137 @@ section {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  line-height: 1.2;
 }
 
 .vacancies__about p {
   width: 95%;
   font-size: 30px;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
   margin-right: auto;
+}
+
+.vacancies__about span {
+  width: 300px;
+  font-size: 30px;
+  margin-right: 84px;
+}
+
+.vacancies-block {
+  margin-top: 35px;
+}
+
+.vacancies-block__item {
+  width: 100%;
+  margin-top: 85px;
+}
+
+.vacancies-block__item h5 {
+  font-size: 36px;
+  color: #cc0000;
+}
+
+.vacancies-block__item .vacancies__item-discr {
+  margin-left: 20px;
+  width: 100%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 20px;
+  position: relative;
+}
+
+.vacancies-block__item .vacancies__item-discr ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.vacancies-block__item .vacancies__item-discr ul li {
+  font-size: 30px;
+}
+
+.vacancies-block__item .vacancies__item-discr .vacancies-detail {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-animation-name: vacanciesDetailMove;
+  animation-name: vacanciesDetailMove;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.vacancies-block__item .vacancies__item-discr .vacancies-detail a {
+  font-size: 20px;
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px);
+  text-decoration: none;
+  color: #cc0000;
+}
+
+.vacancies-block__item .vacancies__item-discr .vacancies-detail:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.vacancies-block__item:nth-child(even) .vacancies__item {
+  margin-left: 84px;
+}
+
+@-webkit-keyframes vacanciesDetailMove {
+  0% {
+    right: 0;
+  }
+  25% {
+    right: 35px;
+  }
+  50% {
+    right: 0;
+  }
+  75% {
+    right: 35px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes vacanciesDetailMove {
+  0% {
+    right: 0;
+  }
+  25% {
+    right: 35px;
+  }
+  50% {
+    right: 0;
+  }
+  75% {
+    right: 35px;
+  }
+  100% {
+    right: 0;
+  }
 }
