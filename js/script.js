@@ -36,4 +36,12 @@ $(document).ready(function() {
       }
     ]
   });
+
+  // For vacancy modal window
+  $('.vacancy__interest').click(function() {
+    $('.modal-form').addClass('modal-form_show');
+  })
+  $('.modal-form_close').click(function() {
+    $('.modal-form').removeClass('modal-form_show');
+  })
 });
