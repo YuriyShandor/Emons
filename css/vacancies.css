@@ -48,8 +48,14 @@ section {
   font-size: 48px;
 }
 
-.header {
+.screen-devider {
   width: 100%;
+  height: 8px;
+  background: url(../img/screen-devider.png);
+}
+
+.header {
+  width: 100vw;
   padding-top: 18px;
   padding-bottom: 33px;
   background: #ffe094;

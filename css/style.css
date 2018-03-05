@@ -19,7 +19,8 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  padding-top: 140px;
 }
 
 .red {
@@ -47,8 +48,14 @@ section {
   font-size: 48px;
 }
 
-.header {
+.screen-devider {
   width: 100%;
+  height: 8px;
+  background: url(../img/screen-devider.png);
+}
+
+.header {
+  width: 100vw;
   padding-top: 18px;
   padding-bottom: 33px;
   background: #ffe094;
@@ -170,6 +177,9 @@ section {
 }
 
 @media only screen and (max-width: 1199px) {
+  body {
+    padding-top: 120px;
+  }
   .section-heading h2 {
     font-size: 46px;
   }
@@ -195,6 +205,9 @@ section {
 }
 
 @media only screen and (max-width: 991px) {
+  body {
+    padding-top: 185px;
+  }
   .section-heading h2 {
     font-size: 42px;
   }
@@ -230,6 +243,9 @@ section {
 }
 
 @media only screen and (max-width: 767px) {
+  body {
+    padding-top: 155px;
+  }
   .section-heading h2 {
     font-size: 36px;
   }
@@ -258,6 +274,9 @@ section {
 }
 
 @media only screen and (max-width: 576px) {
+  body {
+    padding-top: 140px;
+  }
   .section-heading h2 {
     font-size: 32px;
   }
@@ -293,8 +312,13 @@ section {
   }
 }
 
+@media only screen and (max-width: 438px) {
+  body {
+    padding-top: 195px;
+  }
+}
+
 .trasted {
-  margin-top: 400px;
   padding-bottom: 140px;
 }
 
