@@ -1,6 +1,7 @@
 // to compile...
 
 @import "./_components/header&footer.scss";
+@import "./_components/emons-forms.scss";
 
 .vacancy {
   padding-top: 120px;
@@ -323,28 +324,6 @@
     -webkit-transition: all, 2s;
     transition: all, 2s;
 
-    &:before {
-      display: block;
-      content: '';
-      width: 13px;
-      height: 88%;
-      background: url(../img/modal-form__border_left.png);
-      position: absolute;
-      top: 0;
-      left: 15px;
-    }
-
-    &:after {
-      display: block;
-      content: '';
-      width: 98%;
-      height: 18px;
-      background: url(../img/modal-form__border_bottom.png);
-      position: absolute;
-      bottom: 9px;
-      left: 10px;
-    }
-
     form {
       width: 100%;
       height: 100%;
@@ -428,55 +407,9 @@
     }
 
     .modal-form__stamp {
-      opacity: 0;
-      position: absolute;
       top: 15px;
       right: 45px;
-      -webkit-animation-name: modalFormStamp;
-              animation-name: modalFormStamp;
-      -webkit-animation-duration: 3s;
-              animation-duration: 3s;
-      -webkit-animation-iteration-count: 1;
-              animation-iteration-count: 1;
-      -webkit-animation-delay: 3s;
-              animation-delay: 3s;
-      -webkit-animation-timing-function: linear;
-              animation-timing-function: linear;
-      -webkit-animation-fill-mode: forwards;
-              animation-fill-mode: forwards;
     }
-  }
-}
-
-@-webkit-keyframes modalFormStamp {
-  0% {
-    -webkit-transform: scale(3);
-            transform: scale(3);
-    opacity: 0;
-  }
-  // 25%  {right: 35px;}
-  // 50%  {right: 0;}
-  // 75%  {right: 35px;}
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes modalFormStamp {
-  0% {
-    -webkit-transform: scale(3);
-            transform: scale(3);
-    opacity: 0;
-  }
-  // 25%  {right: 35px;}
-  // 50%  {right: 0;}
-  // 75%  {right: 35px;}
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
   }
 }
 

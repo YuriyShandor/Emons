@@ -1,0 +1,68 @@
+.emons-forms {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 13px;
+    height: 88%;
+    background: url(../img/modal-form__border_left.png);
+    position: absolute;
+    top: 0;
+    left: 15px;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    width: 98%;
+    height: 18px;
+    background: url(../img/modal-form__border_bottom.png);
+    position: absolute;
+    bottom: 9px;
+    left: 10px;
+  }
+
+  &__stamp {
+    opacity: 0;
+    position: absolute;
+    -webkit-animation-name: emonsFormStamp;
+            animation-name: emonsFormStamp;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes emonsFormStamp {
+    0% {
+      -webkit-transform: scale(3);
+              transform: scale(3);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes emonsFormStamp {
+    0% {
+      -webkit-transform: scale(3);
+              transform: scale(3);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+}

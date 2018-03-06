@@ -23,7 +23,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden !important;
-  padding-top: 140px;
+  //padding-top: 140px;
 }
 
 .red {
@@ -33,6 +33,10 @@ body {
 section {
   width: 100%;
   background: #fffde8;
+}
+
+.row {
+  padding: 0 15px;
 }
 
 .section-heading {
@@ -63,9 +67,10 @@ section {
   padding-top: 18px;
   padding-bottom: 33px;
   background: #ffe094;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   z-index: 100;
 
   .row {
@@ -181,9 +186,9 @@ section {
 }
 
 @media only screen and (max-width : 1199px) {
-  body {
-    padding-top: 120px;
-  }
+  // body {
+  //   padding-top: 120px;
+  // }
 
   .section-heading {
     h2 {
@@ -218,9 +223,9 @@ section {
 }
 
 @media only screen and (max-width : 991px) {
-  body {
-    padding-top: 185px;
-  }
+  // body {
+  //   padding-top: 185px;
+  // }
 
   .section-heading {
     h2 {
@@ -267,9 +272,9 @@ section {
 }
 
 @media only screen and (max-width : 767px) {
-  body {
-    padding-top: 155px;
-  }
+  // body {
+  //   padding-top: 155px;
+  // }
 
   .section-heading {
     h2 {
@@ -308,9 +313,9 @@ section {
 }
 
 @media only screen and (max-width : 576px) {
-  body {
-    padding-top: 140px;
-  }
+  // body {
+  //   padding-top: 140px;
+  // }
 
   .section-heading {
     h2 {
@@ -358,11 +363,11 @@ section {
   }
 }
 
-@media only screen and (max-width : 438px) {
-  body {
-    padding-top: 195px;
-  }
-}
+// @media only screen and (max-width : 438px) {
+//   body {
+//     padding-top: 195px;
+//   }
+// }
 
 // Section trasted
 .trasted {
