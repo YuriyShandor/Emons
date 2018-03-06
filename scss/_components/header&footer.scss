@@ -24,6 +24,7 @@ body {
           flex-direction: column;
   overflow-x: hidden !important;
   //padding-top: 140px;
+  line-height: 1.2;
 }
 
 .red {
@@ -64,8 +65,8 @@ section {
 // Header
 .header {
   width: 100vw;
-  padding-top: 18px;
-  padding-bottom: 33px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   background: #ffe094;
   position: relative;
   // position: fixed;

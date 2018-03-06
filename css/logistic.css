@@ -20,7 +20,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   overflow-x: hidden !important;
-  padding-top: 140px;
+  line-height: 1.2;
 }
 
 .red {
@@ -30,6 +30,10 @@ body {
 section {
   width: 100%;
   background: #fffde8;
+}
+
+.row {
+  padding: 0 15px;
 }
 
 .section-heading {
@@ -56,12 +60,10 @@ section {
 
 .header {
   width: 100vw;
-  padding-top: 18px;
-  padding-bottom: 33px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   background: #ffe094;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 100;
 }
 
@@ -177,9 +179,6 @@ section {
 }
 
 @media only screen and (max-width: 1199px) {
-  body {
-    padding-top: 120px;
-  }
   .section-heading h2 {
     font-size: 46px;
   }
@@ -205,9 +204,6 @@ section {
 }
 
 @media only screen and (max-width: 991px) {
-  body {
-    padding-top: 185px;
-  }
   .section-heading h2 {
     font-size: 42px;
   }
@@ -243,9 +239,6 @@ section {
 }
 
 @media only screen and (max-width: 767px) {
-  body {
-    padding-top: 155px;
-  }
   .section-heading h2 {
     font-size: 36px;
   }
@@ -274,9 +267,6 @@ section {
 }
 
 @media only screen and (max-width: 576px) {
-  body {
-    padding-top: 140px;
-  }
   .section-heading h2 {
     font-size: 32px;
   }
@@ -309,12 +299,6 @@ section {
   }
   .header-email {
     font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 438px) {
-  body {
-    padding-top: 195px;
   }
 }
 
@@ -550,10 +534,6 @@ section {
   .footer-copyright {
     text-align: center;
   }
-}
-
-.row {
-  padding: 0 15px;
 }
 
 .logistic {
