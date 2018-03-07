@@ -5,7 +5,73 @@
 
 // Section Contacts
 .contacts {
-  
+  padding-top: 50px;
+  padding-bottom: 110px;
+
+  &__block {
+    margin-top: 80px;
+    margin-bottom: 35px;
+    padding-bottom: 50px;
+
+    &-info {
+      padding-left: 50px;
+      padding-top: 25px;
+      padding-right: 0;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+
+      div {
+        font-size: 36px;
+
+        .number {
+          font-size: 48px;
+        }
+      }
+    }
+
+    &-img {
+      padding-right: 0;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__stamp {
+      width: 145px;
+      left: 44%;
+      top: -13%;
+    }
+  }
+
+  &__map {
+    margin-bottom: 150px;
+    position: relative;
+
+    .map {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .printer {
+      width: 65px;
+      position: absolute;
+      right: 25px;
+      bottom: 15px;
+      cursor: pointer;
+    }
+  }
 }
 
 @media only screen and (max-width : 1199px) {
