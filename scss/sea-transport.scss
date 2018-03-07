@@ -262,19 +262,552 @@
 }
 
 @media only screen and (max-width : 1199px) {
+  .sea-transport {
+    padding-top: 5px;
+    padding-bottom: 75px;
 
+    &__img {
+      margin-bottom: 50px;
+    }
+
+    &__about {
+      margin-top: 50px;
+      margin-bottom: 100px;
+
+      p {
+        font-size: 24px;
+      }
+    }
+
+    &__advanteges {
+      margin-top: 40px;
+      margin-bottom: 90px;
+
+      ul {
+        li {
+          font-size: 24px;
+          margin: 7px 0;
+        }
+      }
+    }
+
+    &__meneger {
+      span {
+        font-size: 24px;
+      }
+
+      &-ttl {
+        img {
+          margin-left: 175px;
+        }
+      }
+
+      &-photo {
+        width: 175px;
+        height: 200px;
+      }
+
+      &-contacts {
+        span {
+          margin-left: 85px;
+        }
+      }
+    }
+
+    &__form {
+      margin-top: 100px;
+
+      &-block {
+        padding-top: 50px;
+        padding-bottom: 60px;
+        padding-left: 80px;
+        padding-right: 110px;
+
+        &:before {
+          height: 93%;
+        }
+
+        .sea-transport__form__stamp {
+          width: 118px;
+          right: 20px;
+          top: 10px;
+        }
+
+        h4 {
+          font-size: 48px;
+        }
+
+        form {
+          width: 100%;
+
+          .input {
+            width: 275px;
+            margin-top: 10px;
+
+            input {
+              font-size: 24px;
+            }
+
+            &:after {
+              width: 98%;
+            }
+          }
+
+          label {
+            font-size: 20px;
+          }
+
+          .textarea {
+            width: 275px;
+            height: 80px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+            textarea {
+              font-size: 24px;
+            }
+
+            &:before {
+              width: 98%;
+              top: 38px;
+            }
+
+            &:after {
+              width: 98%;
+              bottom: -3px;
+            }
+          }
+
+          button {
+            margin-top: 60px;
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .sea-transport {
+    padding-top: 5px;
+    padding-bottom: 75px;
 
+    &__img {
+      margin-bottom: 30px;
+    }
+
+    &__about {
+      margin-top: 30px;
+      margin-bottom: 75px;
+
+      p {
+        font-size: 22px;
+      }
+    }
+
+    &__advanteges {
+      margin-top: 30px;
+      margin-bottom: 75px;
+
+      ul {
+        li {
+          font-size: 22px;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    &__meneger {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+
+      span {
+        font-size: 24px;
+      }
+
+      &-ttl {
+        img {
+          display: none;
+        }
+      }
+
+      &-photo {
+        width: 175px;
+        height: 200px;
+      }
+
+      &-contacts {
+        span {
+          margin-left: 0px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    &__form {
+      margin-top: 75px;
+
+      &-block {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 75px;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        &:before {
+          height: 95%;
+        }
+
+        .sea-transport__form__stamp {
+          width: 100px;
+          right: 5px;
+          top: 5px;
+        }
+
+        h4 {
+          font-size: 36px;
+        }
+
+        form {
+          width: 100%;
+          display: -ms-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+
+          .input {
+            width: 275px;
+            margin-top: 10px;
+
+            input {
+              font-size: 24px;
+            }
+
+            &:after {
+              width: 98%;
+            }
+          }
+
+          label {
+            font-size: 18px;
+          }
+
+          .textarea {
+            width: 275px;
+            height: 80px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+            textarea {
+              font-size: 24px;
+            }
+
+            &:before {
+              width: 98%;
+              top: 38px;
+            }
+
+            &:after {
+              width: 98%;
+              bottom: -3px;
+            }
+          }
+
+          button {
+            margin-top: 30px;
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .sea-transport {
+    padding-top: 5px;
+    padding-bottom: 75px;
 
+    &__img {
+      margin-bottom: 25px;
+    }
+
+    &__about {
+      margin-top: 25px;
+      margin-bottom: 75px;
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    &__advanteges {
+      margin-top: 25px;
+      margin-bottom: 75px;
+
+      ul {
+        li {
+          font-size: 20px;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    &__meneger {
+      span {
+        font-size: 20px;
+      }
+
+      &-ttl {
+        img {
+          display: none;
+        }
+      }
+
+      &-photo {
+        width: 175px;
+        height: 200px;
+      }
+
+      &-contacts {
+        margin-top: 20px;
+
+        span {
+          margin-left: 0px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    &__form {
+      margin-top: 75px;
+
+      &-block {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 75px;
+
+        &:before {
+          height: 95%;
+        }
+
+        .sea-transport__form__stamp {
+          width: 100px;
+          right: 5px;
+          top: 5px;
+        }
+
+        h4 {
+          font-size: 36px;
+        }
+
+        form {
+          .input {
+            width: 275px;
+            margin-top: 10px;
+
+            input {
+              font-size: 24px;
+            }
+
+            &:after {
+              width: 98%;
+            }
+          }
+
+          label {
+            font-size: 18px;
+          }
+
+          .textarea {
+            width: 275px;
+            height: 80px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+            textarea {
+              font-size: 24px;
+            }
+
+            &:before {
+              width: 98%;
+              top: 38px;
+            }
+
+            &:after {
+              width: 98%;
+              bottom: -3px;
+            }
+          }
+
+          button {
+            margin-top: 30px;
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .sea-transport {
+    padding-top: 5px;
+    padding-bottom: 75px;
 
+    &__img {
+      margin-bottom: 25px;
+    }
+
+    &__about {
+      margin-top: 25px;
+      margin-bottom: 75px;
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    &__advanteges {
+      margin-top: 25px;
+      margin-bottom: 75px;
+
+      ul {
+        li {
+          font-size: 20px;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    &__meneger {
+      span {
+        font-size: 20px;
+      }
+
+      &-ttl {
+        img {
+          display: none;
+        }
+        margin-bottom: 20px;
+      }
+
+      &-photo {
+        width: 175px;
+        height: 200px;
+      }
+
+      &-contacts {
+        margin-top: 20px;
+
+        span {
+          margin-left: 0px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    &__form {
+      margin-top: 75px;
+
+      &-block {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 15px;
+
+        &:before {
+          height: 95%;
+        }
+
+        .sea-transport__form__stamp {
+          width: 75px;
+          right: 5px;
+          top: -35px;
+        }
+
+        h4 {
+          font-size: 30px;
+        }
+
+        form {
+          .input {
+            width: 90%;
+            margin-top: 10px;
+
+            input {
+              font-size: 24px;
+            }
+
+            &:after {
+              width: 98%;
+            }
+          }
+
+          label {
+            font-size: 18px;
+          }
+
+          .textarea {
+            width: 90%;
+            height: 80px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+            textarea {
+              font-size: 24px;
+            }
+
+            &:before {
+              width: 98%;
+              top: 38px;
+            }
+
+            &:after {
+              width: 98%;
+              bottom: -3px;
+            }
+          }
+
+          button {
+            margin-top: 30px;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
 }
 
 

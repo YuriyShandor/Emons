@@ -894,3 +894,424 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
   outline: none;
 }
+
+@media only screen and (max-width: 1199px) {
+  .sea-transport {
+    padding-top: 5px;
+    padding-bottom: 75px;
+  }
+  .sea-transport__img {
+    margin-bottom: 50px;
+  }
+  .sea-transport__about {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .sea-transport__about p {
+    font-size: 24px;
+  }
+  .sea-transport__advanteges {
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+  .sea-transport__advanteges ul li {
+    font-size: 24px;
+    margin: 7px 0;
+  }
+  .sea-transport__meneger span {
+    font-size: 24px;
+  }
+  .sea-transport__meneger-ttl img {
+    margin-left: 175px;
+  }
+  .sea-transport__meneger-photo {
+    width: 175px;
+    height: 200px;
+  }
+  .sea-transport__meneger-contacts span {
+    margin-left: 85px;
+  }
+  .sea-transport__form {
+    margin-top: 100px;
+  }
+  .sea-transport__form-block {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+    padding-right: 110px;
+  }
+  .sea-transport__form-block:before {
+    height: 93%;
+  }
+  .sea-transport__form-block .sea-transport__form__stamp {
+    width: 118px;
+    right: 20px;
+    top: 10px;
+  }
+  .sea-transport__form-block h4 {
+    font-size: 48px;
+  }
+  .sea-transport__form-block form {
+    width: 100%;
+  }
+  .sea-transport__form-block form .input {
+    width: 275px;
+    margin-top: 10px;
+  }
+  .sea-transport__form-block form .input input {
+    font-size: 24px;
+  }
+  .sea-transport__form-block form .input:after {
+    width: 98%;
+  }
+  .sea-transport__form-block form label {
+    font-size: 20px;
+  }
+  .sea-transport__form-block form .textarea {
+    width: 275px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .sea-transport__form-block form .textarea textarea {
+    font-size: 24px;
+  }
+  .sea-transport__form-block form .textarea:before {
+    width: 98%;
+    top: 38px;
+  }
+  .sea-transport__form-block form .textarea:after {
+    width: 98%;
+    bottom: -3px;
+  }
+  .sea-transport__form-block form button {
+    margin-top: 60px;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .sea-transport {
+    padding-top: 5px;
+    padding-bottom: 75px;
+  }
+  .sea-transport__img {
+    margin-bottom: 30px;
+  }
+  .sea-transport__about {
+    margin-top: 30px;
+    margin-bottom: 75px;
+  }
+  .sea-transport__about p {
+    font-size: 22px;
+  }
+  .sea-transport__advanteges {
+    margin-top: 30px;
+    margin-bottom: 75px;
+  }
+  .sea-transport__advanteges ul li {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+  .sea-transport__meneger {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .sea-transport__meneger span {
+    font-size: 24px;
+  }
+  .sea-transport__meneger-ttl img {
+    display: none;
+  }
+  .sea-transport__meneger-photo {
+    width: 175px;
+    height: 200px;
+  }
+  .sea-transport__meneger-contacts span {
+    margin-left: 0px;
+  }
+  .sea-transport__meneger-contacts img {
+    display: none;
+  }
+  .sea-transport__form {
+    margin-top: 75px;
+  }
+  .sea-transport__form-block {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 75px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .sea-transport__form-block:before {
+    height: 95%;
+  }
+  .sea-transport__form-block .sea-transport__form__stamp {
+    width: 100px;
+    right: 5px;
+    top: 5px;
+  }
+  .sea-transport__form-block h4 {
+    font-size: 36px;
+  }
+  .sea-transport__form-block form {
+    width: 100%;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .sea-transport__form-block form .input {
+    width: 275px;
+    margin-top: 10px;
+  }
+  .sea-transport__form-block form .input input {
+    font-size: 24px;
+  }
+  .sea-transport__form-block form .input:after {
+    width: 98%;
+  }
+  .sea-transport__form-block form label {
+    font-size: 18px;
+  }
+  .sea-transport__form-block form .textarea {
+    width: 275px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .sea-transport__form-block form .textarea textarea {
+    font-size: 24px;
+  }
+  .sea-transport__form-block form .textarea:before {
+    width: 98%;
+    top: 38px;
+  }
+  .sea-transport__form-block form .textarea:after {
+    width: 98%;
+    bottom: -3px;
+  }
+  .sea-transport__form-block form button {
+    margin-top: 30px;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sea-transport {
+    padding-top: 5px;
+    padding-bottom: 75px;
+  }
+  .sea-transport__img {
+    margin-bottom: 25px;
+  }
+  .sea-transport__about {
+    margin-top: 25px;
+    margin-bottom: 75px;
+  }
+  .sea-transport__about p {
+    font-size: 20px;
+  }
+  .sea-transport__advanteges {
+    margin-top: 25px;
+    margin-bottom: 75px;
+  }
+  .sea-transport__advanteges ul li {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  .sea-transport__meneger span {
+    font-size: 20px;
+  }
+  .sea-transport__meneger-ttl img {
+    display: none;
+  }
+  .sea-transport__meneger-photo {
+    width: 175px;
+    height: 200px;
+  }
+  .sea-transport__meneger-contacts {
+    margin-top: 20px;
+  }
+  .sea-transport__meneger-contacts span {
+    margin-left: 0px;
+  }
+  .sea-transport__meneger-contacts img {
+    display: none;
+  }
+  .sea-transport__form {
+    margin-top: 75px;
+  }
+  .sea-transport__form-block {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 75px;
+  }
+  .sea-transport__form-block:before {
+    height: 95%;
+  }
+  .sea-transport__form-block .sea-transport__form__stamp {
+    width: 100px;
+    right: 5px;
+    top: 5px;
+  }
+  .sea-transport__form-block h4 {
+    font-size: 36px;
+  }
+  .sea-transport__form-block form .input {
+    width: 275px;
+    margin-top: 10px;
+  }
+  .sea-transport__form-block form .input input {
+    font-size: 24px;
+  }
+  .sea-transport__form-block form .input:after {
+    width: 98%;
+  }
+  .sea-transport__form-block form label {
+    font-size: 18px;
+  }
+  .sea-transport__form-block form .textarea {
+    width: 275px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .sea-transport__form-block form .textarea textarea {
+    font-size: 24px;
+  }
+  .sea-transport__form-block form .textarea:before {
+    width: 98%;
+    top: 38px;
+  }
+  .sea-transport__form-block form .textarea:after {
+    width: 98%;
+    bottom: -3px;
+  }
+  .sea-transport__form-block form button {
+    margin-top: 30px;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sea-transport {
+    padding-top: 5px;
+    padding-bottom: 75px;
+  }
+  .sea-transport__img {
+    margin-bottom: 25px;
+  }
+  .sea-transport__about {
+    margin-top: 25px;
+    margin-bottom: 75px;
+  }
+  .sea-transport__about p {
+    font-size: 20px;
+  }
+  .sea-transport__advanteges {
+    margin-top: 25px;
+    margin-bottom: 75px;
+  }
+  .sea-transport__advanteges ul li {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  .sea-transport__meneger span {
+    font-size: 20px;
+  }
+  .sea-transport__meneger-ttl {
+    margin-bottom: 20px;
+  }
+  .sea-transport__meneger-ttl img {
+    display: none;
+  }
+  .sea-transport__meneger-photo {
+    width: 175px;
+    height: 200px;
+  }
+  .sea-transport__meneger-contacts {
+    margin-top: 20px;
+  }
+  .sea-transport__meneger-contacts span {
+    margin-left: 0px;
+  }
+  .sea-transport__meneger-contacts img {
+    display: none;
+  }
+  .sea-transport__form {
+    margin-top: 75px;
+  }
+  .sea-transport__form-block {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+  .sea-transport__form-block:before {
+    height: 95%;
+  }
+  .sea-transport__form-block .sea-transport__form__stamp {
+    width: 75px;
+    right: 5px;
+    top: -35px;
+  }
+  .sea-transport__form-block h4 {
+    font-size: 30px;
+  }
+  .sea-transport__form-block form .input {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .sea-transport__form-block form .input input {
+    font-size: 24px;
+  }
+  .sea-transport__form-block form .input:after {
+    width: 98%;
+  }
+  .sea-transport__form-block form label {
+    font-size: 18px;
+  }
+  .sea-transport__form-block form .textarea {
+    width: 90%;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .sea-transport__form-block form .textarea textarea {
+    font-size: 24px;
+  }
+  .sea-transport__form-block form .textarea:before {
+    width: 98%;
+    top: 38px;
+  }
+  .sea-transport__form-block form .textarea:after {
+    width: 98%;
+    bottom: -3px;
+  }
+  .sea-transport__form-block form button {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+}
