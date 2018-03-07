@@ -136,15 +136,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header-nav {
-  display: none;
-  width: 35vw;
+  -webkit-transform: translateX(-102%);
+  transform: translateX(-102%);
   min-height: 100vh;
-  background: rgba(255, 224, 148, 0.7);
-  position: fixed;
+  background: rgba(255, 224, 148, 0.85);
+  position: absolute;
   top: 0;
-  left: -36vw;
   z-index: 105;
-  padding-top: 175px;
+  padding-top: 150px;
+  padding-right: 20px;
   padding-bottom: 25px;
   -webkit-transition: all, .7s ease-in;
   transition: all, .7s ease-in;
@@ -161,13 +161,13 @@ input[type=number]::-webkit-outer-spin-button {
 .header-nav ul li {
   padding: 10px 0;
   position: relative;
-  padding-left: 20%;
+  padding-left: calc((100vw - 1200px) / 2 + 15px);
 }
 
 .header-nav ul li:before {
   display: block;
   content: '';
-  width: 70%;
+  width: 75%;
   height: 5px;
   position: absolute;
   bottom: 0;
@@ -188,7 +188,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header-nav_show {
-  left: 0;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -196,11 +197,19 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 46px;
   }
   .header {
-    padding-top: 15px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .header .container {
+    width: 100%;
+    padding: 0 25px;
   }
   .header .emons-logo {
-    margin-top: -25px;
+    margin-top: -5px;
+  }
+  .header .emons-logo .menu-icon {
+    margin-top: 0px;
+    margin-right: 10px;
   }
   .header h3 {
     font-size: 24px;
@@ -214,6 +223,17 @@ input[type=number]::-webkit-outer-spin-button {
   .header-email {
     font-size: 24px;
   }
+  .header-nav {
+    padding-top: 150px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+  .header-nav ul li {
+    padding-left: 25px;
+  }
+  .header-nav ul li a {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -221,24 +241,29 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 42px;
   }
   .header {
-    padding-top: 15px;
-    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .header .container .row {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .header .emons-logo {
-    margin-left: 50%;
-    margin-top: 0px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    margin-bottom: 20px;
+    margin-top: 0;
   }
   .header .emons-logo .logo {
-    width: 150px;
+    width: 130px;
   }
   .header .emons-logo .logo img {
     width: 100%;
   }
+  .header .emons-logo .menu-icon {
+    margin-right: 5px;
+    width: 35px;
+  }
   .header h3 {
     font-size: 24px;
+    width: 160px;
   }
   .header h3 .red {
     font-size: 30px;
@@ -256,26 +281,26 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 36px;
   }
   .header {
-    padding-top: 15px;
-    padding-bottom: 25px;
-  }
-  .header .emons-logo {
-    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
   .header .emons-logo .logo {
-    width: 120px;
+    width: 100px;
+  }
+  .header .emons-logo .menu-icon {
+    width: 25px;
   }
   .header h3 {
     font-size: 20px;
   }
   .header h3 .red {
-    font-size: 24px;
-  }
-  .header-number {
     font-size: 22px;
   }
-  .header-email {
+  .header-number {
     font-size: 20px;
+  }
+  .header-email {
+    font-size: 18px;
   }
 }
 
