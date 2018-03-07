@@ -69,6 +69,12 @@ section {
   background: url(../img/screen-devider.png);
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 // Header
 .header {
   width: 100vw;

@@ -100,33 +100,41 @@
         </div>
         <img src="img/printer.png" alt="" class="printer">
       </div>
-      <div class="row contact__form">
-        <div class="col-xl-9 contact__form-block">
+      <div class="row contacts__form justify-content-center">
+        <div class="col-xl-10 contacts__form-block">
           <h4>Вы можете задать свой вопрос или же сделать заказ, отправив его из данной формы:</h4>
-          <div>
-            <div class="inputs">
-              <div class="input"><input type="text"></div>
-              <label for="">Ваше имя</label>
-              <div class="input"><input type="text"></div>
-              <label for="">Ваш телефон</label>
-              <div class="input"><input type="text"></div>
-              <label for="">Ваша электронная почта</label>
-            </div>
-            <div class="textarea">
-              <textarea name="name"></textarea>
-            </div>
-            <div class="nested-files">
-              <h6>Вложенные файлы:</h6>
-              <div class="files">
-                <div>Список груза.xls</div>
-                <div>Точки забора.xlsx</div>
+          <form action="">
+            <div class="fields">
+              <div class="inputs">
+                <div class="input"><input type="text" required></div>
+                <label for="">Ваше имя</label>
+                <div class="input"><input type="number" required></div>
+                <label for="">Ваш телефон</label>
+                <div class="input"><input type="email" required></div>
+                <label for="">Ваша электронная почта</label>
+              </div>
+              <div class="textarea">
+                <textarea name="name" required></textarea>
+                <label for="">Комментарий</label>
+                <div class="textarea-line textarea-line_01"></div>
+                <div class="textarea-line textarea-line_02"></div>
+                <div class="textarea-line textarea-line_03"></div>
+                <div class="textarea-line textarea-line_04"></div>
+                <div class="textarea-line textarea-line_05"></div>
+              </div>
+              <div class="nested-files">
+                <h6>Вложенные файлы:</h6>
+                <div class="files">
+                  <div>Список груза.xls</div>
+                  <div>Точки забора.xlsx</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <button>Приложить еще файл</button>
-            <button>Отправить заявку</button>
-          </div>
+            <div class="buttons">
+              <button>Приложить еще файл</button>
+              <button>Отправить заявку</button>
+            </div>
+          </form>
 
           <div class="border border-top"></div>
           <div class="border border-bottom"></div>
@@ -134,8 +142,8 @@
           <div class="border border-right"></div>
         </div>
       </div>
-      <div class="row contacts__requisites">
-        <div class="col-xl-8">
+      <div class="row contacts__requisites justify-content-center">
+        <div class="col-xl-9">
           <h5>Реквизиты в банке Аваль: <br>
             Р/С 40702810538040035780, МФО 044525225, ЕДРПОУ 33145438</h5>
         </div>

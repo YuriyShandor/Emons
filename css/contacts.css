@@ -65,6 +65,12 @@ section {
   background: url(../img/screen-devider.png);
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .header {
   width: 100vw;
   padding-top: 10px;
@@ -681,4 +687,244 @@ section {
   right: 25px;
   bottom: 15px;
   cursor: pointer;
+}
+
+.contacts__form {
+  margin-top: -30px;
+}
+
+.contacts__form-block {
+  background: #f9edd1;
+  -webkit-box-shadow: 0 0 28px 18px #f9edd1 inset;
+  box-shadow: 0 0 28px 18px #f9edd1 inset;
+  position: relative;
+  padding-top: 75px;
+  padding-left: 100px;
+  padding-right: 35px;
+  padding-bottom: 50px;
+}
+
+.contacts__form-block h4 {
+  font-size: 36px;
+}
+
+.contacts__form-block form {
+  width: 100%;
+}
+
+.contacts__form-block .fields {
+  width: 100%;
+  padding-right: 50px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contacts__form-block .fields .inputs .input {
+  width: 350px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.contacts__form-block .fields .inputs .input input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  font-family: BeerMoney;
+  padding-left: 5px;
+  outline-color: #cc0000;
+}
+
+.contacts__form-block .fields .inputs .input:after {
+  display: block;
+  content: '';
+  width: 99%;
+  height: 3px;
+  background: url(../img/modal-form__input-border.png);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.contacts__form-block .fields .inputs label {
+  margin: 0;
+  font-size: 20px;
+}
+
+.contacts__form-block .fields .textarea {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  margin-top: -5px;
+}
+
+.contacts__form-block .fields .textarea textarea {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline-color: #cc0000;
+  font-size: 24px;
+  font-family: BeerMoney;
+  padding-left: 5px;
+  line-height: 2.2;
+  resize: none;
+}
+
+.contacts__form-block .fields .textarea .textarea-line {
+  width: 98%;
+  height: 3px;
+  background: url(../img/modal-form__input-border.png);
+  position: absolute;
+  left: 0;
+}
+
+.contacts__form-block .fields .textarea .textarea-line_01 {
+  top: 44px;
+}
+
+.contacts__form-block .fields .textarea .textarea-line_02 {
+  top: 99px;
+}
+
+.contacts__form-block .fields .textarea .textarea-line_03 {
+  top: 151px;
+}
+
+.contacts__form-block .fields .textarea .textarea-line_04 {
+  top: 205px;
+}
+
+.contacts__form-block .fields .textarea .textarea-line_05 {
+  top: 255px;
+}
+
+.contacts__form-block .fields .textarea label {
+  position: absolute;
+  left: 3px;
+  top: 42px;
+  font-size: 20px;
+}
+
+.contacts__form-block .fields .nested-files {
+  margin-top: -30px;
+}
+
+.contacts__form-block .fields .nested-files h6 {
+  font-size: 36px;
+}
+
+.contacts__form-block .fields .nested-files .files {
+  min-height: 80px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 30px;
+  position: relative;
+}
+
+.contacts__form-block .fields .nested-files .files div {
+  font-size: 24px;
+}
+
+.contacts__form-block .fields .nested-files .files:before {
+  display: block;
+  content: '';
+  height: 100%;
+  width: 18px;
+  background: url(../img/contacts-form__files.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contacts__form-block .buttons {
+  width: 100%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.contacts__form-block .buttons button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: BeerMoney;
+  font-size: 36px;
+  color: #cc0000;
+  cursor: pointer;
+  outline: none;
+}
+
+.contacts__form-block .buttons button:last-child {
+  margin-right: 60px;
+}
+
+.contacts__form-block .border {
+  position: absolute;
+}
+
+.contacts__form-block .border-top, .contacts__form-block .border-bottom {
+  width: 94%;
+  height: 11px;
+  background: url(../img/contacts-form__border_top.png);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.contacts__form-block .border-top {
+  top: 10px;
+}
+
+.contacts__form-block .border-bottom {
+  bottom: 10px;
+}
+
+.contacts__form-block .border-left, .contacts__form-block .border-right {
+  width: 11px;
+  height: 90%;
+  background: url(../img/contacts-form__border_left.png);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contacts__form-block .border-left {
+  left: 10px;
+}
+
+.contacts__form-block .border-right {
+  right: 10px;
+}
+
+.contacts__requisites {
+  margin-top: 75px;
+}
+
+.contacts__requisites h5 {
+  font-size: 36px;
 }
