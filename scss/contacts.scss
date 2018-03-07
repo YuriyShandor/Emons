@@ -317,19 +317,681 @@
 }
 
 @media only screen and (max-width : 1199px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 100px;
 
+    &__block {
+      margin-top: 75px;
+      margin-bottom: 30px;
+      padding-bottom: 40px;
+
+      &-info {
+        padding-left: 30px;
+        padding-top: 15px;
+
+        div {
+          font-size: 30px;
+
+          .number {
+            font-size: 40px;
+          }
+        }
+      }
+
+      &-img {
+      }
+
+      &__stamp {
+        width: 125px;
+        left: 44%;
+        top: -13%;
+      }
+    }
+
+    &__map {
+      margin-bottom: 120px;
+
+      .printer {
+        width: 50px;
+        right: 20px;
+        bottom: 5px;
+      }
+    }
+
+    &__form {
+      &-block {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+
+        h4 {
+          font-size: 30px;
+        }
+
+        .fields {
+          padding-right: 20px;
+
+          .inputs {
+            .input {
+              width: 310px;
+              margin-top: 7px;
+
+              input {
+                font-size: 24px;
+              }
+            }
+
+            label {
+              font-size: 18px;
+            }
+          }
+
+          .textarea {
+            width: 310px;
+            height: 250px;
+            margin-top: -10px;
+
+            textarea {
+              font-size: 24px;
+              line-height: 2.2;
+            }
+
+            .textarea-line {
+              &_01 {
+                top: 44px;
+              }
+
+              &_02 {
+                top: 99px;
+              }
+
+              &_03 {
+                top: 151px;
+              }
+
+              &_04 {
+                top: 205px;
+              }
+
+              &_05 {
+                top: 255px;
+              }
+            }
+
+            label {
+              top: 45px;
+              font-size: 18px;
+            }
+          }
+
+          .nested-files {
+            margin-top: -25px;
+
+            h6 {
+              font-size: 30px;
+            }
+
+            .files {
+              min-height: 80px;
+              padding-left: 25px;
+
+              div {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+
+        .buttons {
+          margin-top: 25px;
+
+          button {
+            font-size: 30px;
+
+            &:last-child {
+              margin-right: 20px;
+            }
+          }
+        }
+
+        .border {
+          &-top, &-bottom {
+            width: 93%;
+            height: 11px;
+          }
+
+          &-left, &-right {
+            width: 11px;
+            height: 90%;
+          }
+        }
+      }
+    }
+
+    &__requisites {
+      margin-top: 75px;
+
+      h5 {
+        font-size: 30px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 75px;
 
+    &__block {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      padding-bottom: 50px;
+
+      &-info {
+        padding-left: 30px;
+        padding-top: 15px;
+        min-height: 340px;
+
+        div {
+          font-size: 30px;
+
+          .number {
+            font-size: 40px;
+          }
+        }
+      }
+
+      &-img {
+        display: none;
+      }
+
+      &__stamp {
+        width: 125px;
+        left: 75%;
+        top: 5%;
+      }
+
+      &:after {
+        width: 93%;
+      }
+    }
+
+    &__map {
+      margin-bottom: 100px;
+
+      .printer {
+        width: 30px;
+        right: 20px;
+        bottom: 5px;
+      }
+    }
+
+    &__form {
+      &-block {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+
+        h4 {
+          font-size: 30px;
+        }
+
+        .fields {
+          padding-right: 20px;
+
+          .inputs {
+            .input {
+              width: 370px;
+              margin-top: 7px;
+
+              input {
+                font-size: 24px;
+              }
+            }
+
+            label {
+              font-size: 18px;
+            }
+          }
+
+          .textarea {
+            width: 370px;
+            height: 250px;
+            margin-top: 20px;
+
+            textarea {
+              font-size: 24px;
+              line-height: 2.2;
+            }
+
+            .textarea-line {
+              &_01 {
+                top: 44px;
+              }
+
+              &_02 {
+                top: 99px;
+              }
+
+              &_03 {
+                top: 151px;
+              }
+
+              &_04 {
+                top: 205px;
+              }
+
+              &_05 {
+                top: 255px;
+              }
+            }
+
+            label {
+              top: 45px;
+              font-size: 18px;
+            }
+          }
+
+          .nested-files {
+            margin-top: 30px;
+
+            h6 {
+              font-size: 30px;
+            }
+
+            .files {
+              min-height: 80px;
+              padding-left: 25px;
+
+              div {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+
+        .buttons {
+          margin-top: 30px;
+
+          button {
+            font-size: 30px;
+
+            &:last-child {
+              margin-right: 20px;
+            }
+          }
+        }
+
+        .border {
+          &-top, &-bottom {
+            width: 93%;
+            height: 11px;
+          }
+
+          &-left, &-right {
+            width: 11px;
+            height: 92%;
+          }
+        }
+      }
+    }
+
+    &__requisites {
+      margin-top: 55px;
+
+      h5 {
+        font-size: 30px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 75px;
 
+    &__block {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      padding-bottom: 50px;
+
+      &-info {
+        padding-left: 30px;
+        padding-top: 15px;
+        min-height: 300px;
+
+        div {
+          font-size: 26px;
+
+          .number {
+            font-size: 30px;
+          }
+        }
+      }
+
+      &-img {
+        display: none;
+      }
+
+      &__stamp {
+        width: 125px;
+        left: 75%;
+        top: 5%;
+      }
+
+      &:after {
+        width: 93%;
+      }
+    }
+
+    &__map {
+      margin-bottom: 100px;
+
+      .printer {
+        width: 30px;
+        right: 20px;
+        bottom: 5px;
+      }
+    }
+
+    &__form {
+      &-block {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+
+        h4 {
+          font-size: 22px;
+        }
+
+        .fields {
+          padding-right: 20px;
+
+          .inputs {
+            .input {
+              width: 370px;
+              margin-top: 7px;
+
+              input {
+                font-size: 24px;
+              }
+            }
+
+            label {
+              font-size: 18px;
+            }
+          }
+
+          .textarea {
+            width: 370px;
+            height: 250px;
+            margin-top: 20px;
+
+            textarea {
+              font-size: 24px;
+              line-height: 2.2;
+            }
+
+            .textarea-line {
+              &_01 {
+                top: 44px;
+              }
+
+              &_02 {
+                top: 99px;
+              }
+
+              &_03 {
+                top: 151px;
+              }
+
+              &_04 {
+                top: 205px;
+              }
+
+              &_05 {
+                top: 255px;
+              }
+            }
+
+            label {
+              top: 45px;
+              font-size: 18px;
+            }
+          }
+
+          .nested-files {
+            margin-top: 30px;
+
+            h6 {
+              font-size: 22px;
+            }
+
+            .files {
+              min-height: 80px;
+              padding-left: 25px;
+
+              div {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+
+        .buttons {
+          margin-top: 30px;
+
+          button {
+            font-size: 22px;
+
+            &:last-child {
+              margin-right: 15px;
+            }
+          }
+        }
+
+        .border {
+          &-top, &-bottom {
+            width: 93%;
+            height: 11px;
+          }
+
+          &-left, &-right {
+            width: 11px;
+            height: 92%;
+          }
+        }
+      }
+    }
+
+    &__requisites {
+      margin-top: 50px;
+
+      h5 {
+        font-size: 25px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 75px;
 
+    &__block {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      padding-bottom: 50px;
+
+      &-info {
+        padding-left: 30px;
+        padding-top: 15px;
+        min-height: 300px;
+
+        div {
+          font-size: 22px;
+
+          .number {
+            font-size: 24px;
+          }
+        }
+      }
+
+      &-img {
+        display: none;
+      }
+
+      &__stamp {
+        display: none;
+        width: 75px;
+        left: 70%;
+        top: 0%;
+      }
+
+      &:after {
+        width: 93%;
+      }
+    }
+
+    &__map {
+      display: none;
+    }
+
+    &__form {
+      margin-top: 50px;
+
+      &-block {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+
+        h4 {
+          font-size: 22px;
+        }
+
+        .fields {
+          padding-right: 20px;
+
+          .inputs {
+            max-width: 100%;
+
+            .input {
+              width: 95%;
+              margin-top: 7px;
+
+              input {
+                font-size: 24px;
+              }
+            }
+
+            label {
+              font-size: 18px;
+            }
+          }
+
+          .textarea {
+            width: 250px;
+            height: 250px;
+            margin-top: 20px;
+
+            textarea {
+              font-size: 24px;
+              line-height: 2.2;
+            }
+
+            .textarea-line {
+              &_01 {
+                top: 44px;
+              }
+
+              &_02 {
+                top: 99px;
+              }
+
+              &_03 {
+                top: 151px;
+              }
+
+              &_04 {
+                top: 205px;
+              }
+
+              &_05 {
+                top: 255px;
+              }
+            }
+
+            label {
+              top: 45px;
+              font-size: 18px;
+            }
+          }
+
+          .nested-files {
+            margin-top: 30px;
+
+            h6 {
+              font-size: 22px;
+            }
+
+            .files {
+              min-height: 80px;
+              padding-left: 25px;
+
+              div {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .buttons {
+          margin-top: 30px;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+
+          button {
+            font-size: 22px;
+
+            &:last-child {
+              margin-top: 25px;
+              margin-right: 15px;
+            }
+          }
+        }
+
+        .border {
+          &-top, &-bottom {
+            width: 93%;
+            height: 11px;
+          }
+
+          &-left, &-right {
+            width: 11px;
+            height: 93%;
+          }
+        }
+      }
+    }
+
+    &__requisites {
+      margin-top: 50px;
+
+      h5 {
+        font-size: 24px;
+      }
+    }
+  }
 }
 
 
