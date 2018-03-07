@@ -1,0 +1,329 @@
+// to compile...
+
+@import "./_components/header&footer.scss";
+@import "./_components/emons-forms.scss";
+
+// Section Sea Transportation
+
+.sea-transport {
+  padding-top: 25px;
+  padding-bottom: 75px;
+
+  &__img {
+    margin-bottom: 50px;
+
+    div {
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__about {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    div {
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+
+  &__advanteges {
+    margin-top: 40px;
+    margin-bottom: 90px;
+
+    div {
+      padding: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        font-size: 24px;
+        margin: 7px 0;
+      }
+    }
+  }
+
+  &__meneger {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    span {
+      font-size: 24px;
+    }
+
+    &-ttl {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+
+      span {
+        text-align: right;
+      }
+
+      img {
+        margin-left: 175px;
+      }
+    }
+
+    &-photo {
+      width: 175px;
+      height: 200px;
+      -webkit-box-shadow: 0 0 18px 8px #fffde8 inset;
+              box-shadow: 0 0 18px 8px #fffde8 inset;
+      background: url(../img/404comand__member.jpg) no-repeat center / cover;
+    }
+
+    &-contacts {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+
+      span {
+        text-align: left;
+        margin-left: 85px;
+        color: $red;
+      }
+
+      img {
+        //margin-right: 175px;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 100px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    &-block {
+      background: #f9edd1;
+      -webkit-box-shadow: 0 0 18px 8px #f9edd1 inset;
+              box-shadow: 0 0 18px 8px #f9edd1 inset;
+      padding-top: 50px;
+      padding-bottom: 60px;
+      padding-left: 80px;
+      padding-right: 110px;
+
+      &:before {
+        height: 93%;
+      }
+
+      .sea-transport__form__stamp {
+        width: 118px;
+        right: 20px;
+        top: 10px;
+      }
+
+      h4 {
+        font-size: 48px;
+        text-align: center;
+      }
+
+      form {
+        width: 100%;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+
+        .input {
+          width: 275px;
+          margin-top: 10px;
+          position: relative;
+
+          input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            font-family: BeerMoney;
+            padding-left: 5px;
+            outline-color: $red;
+          }
+
+          &:after {
+            display: block;
+            content: '';
+            width: 98%;
+            height: 3px;
+            background: url(../img/modal-form__input-border.png);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+
+        label {
+          margin: 0;
+          font-size: 20px;
+        }
+
+        .textarea {
+          width: 275px;
+          height: 80px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          position: relative;
+
+          textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            font-family: BeerMoney;
+            padding-left: 5px;
+            outline-color: $red;
+            line-height: 1.8;
+            resize: none;
+          }
+
+          &:before {
+            display: block;
+            content: '';
+            width: 98%;
+            height: 3px;
+            background: url(../img/modal-form__input-border.png);
+            position: absolute;
+            top: 38px;
+            left: 0;
+          }
+
+          &:after {
+            display: block;
+            content: '';
+            width: 99%;
+            height: 3px;
+            background: url(../img/modal-form__input-border.png);
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+          }
+        }
+
+        button {
+          margin-top: 60px;
+          display: block;
+          background: transparent;
+          border: none;
+          padding: 0;
+          font-family: BeerMoney;
+          font-size: 36px;
+          color: $red;
+          cursor: pointer;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
