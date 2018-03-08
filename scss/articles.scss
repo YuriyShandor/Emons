@@ -162,7 +162,7 @@
             -ms-flex-align: center;
                 align-items: center;
 
-        h5 {
+        .article-ttl {
           font-size: 36px;
           color: $red;
         }
@@ -250,7 +250,7 @@
         &:after {
           display: block;
           content: '';
-          width: 99%;
+          width: 98%;
           height: 3px;
           background: url(../img/modal-form__input-border.png);
           position: absolute;
@@ -287,15 +287,372 @@
 }
 
 @media only screen and (max-width : 1199px) {
+  .articles {
+    padding-top: 30px;
+    padding-bottom: 100px;
 
+    &__filter {
+      margin-top: -10px;
+
+      &-block {
+        img {
+          width: 35px;
+        }
+
+        span {
+          font-size: 28px;
+          margin-left: 12px;
+        }
+
+        .articles__filter-categories {
+          top: -25px;
+          padding-top: 90px;
+
+          li {
+            min-width: 100%;
+            font-size: 28px;
+            padding: 10px 0;
+
+            &:before {
+              width: 10px;
+              height: 10px;
+              background-size: contain;
+              margin-right: 15px;
+              margin-top: 10px;
+            }
+
+            &:after {
+              width: 47%;
+              left: -90px;
+            }
+          }
+        }
+
+        .articles__filter-categories_show {
+          width: 385px;
+          padding-left: 40px;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    &__item {
+      margin-top: 35px;
+
+      &-discr {
+        padding-right: 40px;
+
+        .article__heading-block {
+          .article-ttl {
+            font-size: 34px;
+          }
+
+          span {
+            font-size: 24px;
+            margin-right: 10px;
+          }
+        }
+
+        .article__info {
+          p {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    &__pages-nav {
+      margin-top: 50px;
+      padding-left: 110px;
+      font-size: 28px;
+    }
+
+    &__form {
+      margin-top: 75px;
+
+      &-block {
+        padding: 50px 45px 50px 60px;
+
+        h6 {
+          font-size: 24px;
+        }
+
+        .input {
+          width: 275px;
+          margin-top: 20px;
+
+          input {
+            font-size: 24px;
+          }
+
+          &:after {
+            width: 99%;
+          }
+        }
+
+        label {
+          font-size: 20px;
+        }
+
+        button {
+          font-size: 36px;
+          margin-top: 30px;
+        }
+
+        .articles-form__stamp {
+          top: 5px;
+          right: 5px;
+          width: 100px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .articles {
+    padding-top: 30px;
+    padding-bottom: 100px;
 
+    &__filter {
+      margin-top: -10px;
+
+      &-block {
+        img {
+          width: 30px;
+        }
+
+        span {
+          font-size: 26px;
+          margin-left: 10px;
+        }
+
+        .articles__filter-categories {
+          top: -25px;
+          padding-top: 75px;
+
+          li {
+            font-size: 26px;
+            padding: 7px 0;
+
+            &:before {
+              width: 8px;
+              height: 8px;
+              margin-right: 10px;
+              margin-top: 7px;
+            }
+
+            &:after {
+              width: 50%;
+              left: -70px;
+            }
+          }
+        }
+
+        .articles__filter-categories_show {
+          width: 350px;
+          padding-left: 30px;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    &__item {
+      margin-top: 30px;
+
+      &-discr {
+        padding-right: 20px;
+
+        .article__heading-block {
+          .article-ttl {
+            font-size: 28px;
+          }
+
+          span {
+            font-size: 22px;
+            margin-right: 10px;
+          }
+        }
+
+        .article__info {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    &__pages-nav {
+      margin-top: 40px;
+      padding-left: 40px;
+      font-size: 26px;
+    }
+
+    &__form {
+      margin-top: 75px;
+
+      &-block {
+        padding: 50px 45px 50px 60px;
+
+        h6 {
+          font-size: 22px;
+        }
+
+        .input {
+          width: 275px;
+          margin-top: 10px;
+
+          input {
+            font-size: 24px;
+          }
+
+          &:after {
+            width: 98%;
+          }
+        }
+
+        label {
+          font-size: 18px;
+        }
+
+        button {
+          font-size: 30px;
+          margin-top: 25px;
+        }
+
+        .articles-form__stamp {
+          top: 5px;
+          right: 5px;
+          width: 100px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .articles {
+    padding-top: 30px;
+    padding-bottom: 100px;
 
+    &__filter {
+      margin-top: -10px;
+
+      &-block {
+        img {
+          width: 25px;
+        }
+
+        span {
+          font-size: 24px;
+          margin-left: 10px;
+        }
+
+        .articles__filter-categories {
+          top: -25px;
+          padding-top: 75px;
+
+          li {
+            font-size: 24px;
+            padding: 5px 0;
+
+            &:before {
+              width: 6px;
+              height: 6px;
+              margin-right: 7px;
+              margin-top: 9px;
+            }
+
+            &:after {
+              width: 50%;
+              left: -70px;
+            }
+          }
+        }
+
+        .articles__filter-categories_show {
+          width: 300px;
+          padding-left: 30px;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    &__item {
+      margin-top: 30px;
+
+      &-img {
+        display: none;
+      }
+
+      &-discr {
+        padding-right: 20px;
+
+        .article__heading-block {
+          .article-ttl {
+            font-size: 28px;
+          }
+
+          span {
+            font-size: 22px;
+            margin-right: 10px;
+          }
+        }
+
+        .article__info {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    &__pages-nav {
+      margin-top: 40px;
+      padding-left: 40px;
+      font-size: 26px;
+    }
+
+    &__form {
+      margin-top: 75px;
+
+      &-block {
+        padding: 50px 45px 50px 60px;
+
+        h6 {
+          font-size: 22px;
+        }
+
+        .input {
+          width: 275px;
+          margin-top: 10px;
+
+          input {
+            font-size: 24px;
+          }
+
+          &:after {
+            width: 98%;
+          }
+        }
+
+        label {
+          font-size: 18px;
+        }
+
+        button {
+          font-size: 30px;
+          margin-top: 25px;
+        }
+
+        .articles-form__stamp {
+          top: 5px;
+          right: 5px;
+          width: 100px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {

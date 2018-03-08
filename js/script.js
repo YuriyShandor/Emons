@@ -49,6 +49,7 @@ $(document).ready(function() {
   $('.articles-filter__toggler-icon').on('click', function() {
     $('.articles__filter-categories').toggleClass('articles__filter-categories_show');
   });
+  $('.articles__filter-categories li:first-child').addClass('active');
   $('.articles__filter-categories li').click(function() {
     $('.articles__filter-categories li').removeClass('active');
     $(this).addClass('active');
