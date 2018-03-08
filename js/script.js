@@ -45,5 +45,12 @@ $(document).ready(function() {
     $('.modal-form').removeClass('modal-form_show');
   })
 
-
+  // For Articles Filter
+  $('.articles-filter__toggler-icon').on('click', function() {
+    $('.articles__filter-categories').toggleClass('articles__filter-categories_show');
+  });
+  $('.articles__filter-categories li').click(function() {
+    $('.articles__filter-categories li').removeClass('active');
+    $(this).addClass('active');
+  })
 });
