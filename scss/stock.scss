@@ -1,0 +1,204 @@
+// to compile...
+
+@import "./_components/header&footer.scss";
+
+// Section Rolling Stock
+.stock {
+  padding-top: 75px;
+  padding-bottom: 160px;
+
+  &__about {
+    margin-top: 55px;
+    padding: 0 45px;
+
+    p {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+
+  &__image {
+    margin-top: 20px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    div {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative;
+
+      .multi-transport {
+        width: 100%;
+      }
+
+      .transportation__arrow_left {
+        position: absolute;
+        left: -90px;
+        bottom: -30px;
+      }
+
+      .transportation__arrow_right {
+        position: absolute;
+        right: -60px;
+        bottom: -95px;
+      }
+    }
+  }
+
+  &__statistic {
+    margin-top: 20px;
+    margin-bottom: 120px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 55px;
+
+    &-item {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 45px 30px;
+
+      h4 {
+        margin: 0;
+        font-size: 60px;
+        color: $red;
+        margin-bottom: 15px;
+      }
+
+      span {
+        font-size: 48px;
+        line-height: 0.75;
+      }
+
+      &:nth-child(2) {
+        -webkit-transform: translateY(80px);
+                transform: translateY(80px);
+      }
+
+      &:nth-child(3) {
+        -webkit-transform: translateY(100px);
+                transform: translateY(100px);
+      }
+
+      &:nth-child(5) {
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
+      }
+
+      &:nth-child(6) {
+        -webkit-transform: translate(-120px, 10px);
+                transform: translate(-120px, 10px);
+      }
+    }
+  }
+
+  &__contractors {
+    margin-top: 100px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    div {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+    }
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
