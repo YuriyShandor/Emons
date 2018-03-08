@@ -40,12 +40,24 @@
           -ms-flex-pack: end;
               justify-content: flex-end;
       height: 330px;
+      margin: 35px 0;
 
       &-img {
         width: 95%;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         img {
           max-width: 100%;
+          height: auto;
         }
       }
 
@@ -132,6 +144,7 @@
 
       &-item {
         height: 300px;
+        margin: 20px 0;
 
         a {
           margin-top: 10px;
@@ -231,6 +244,7 @@
 
       &-item {
         height: 250px;
+        margin: 5px 0;
 
         a {
           margin-top: 10px;
