@@ -759,7 +759,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .articles__item {
-  margin-top: 35px;
+  margin-top: 40px;
   display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -790,6 +790,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .articles__item-discr .article__heading-block {
+  margin-bottom: 20px;
   width: 100%;
   display: -ms-flex;
   display: -webkit-box;
@@ -927,7 +928,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-bottom: 100px;
   }
   .articles__filter {
-    margin-top: -10px;
+    margin-bottom: -5px;
   }
   .articles__filter-block img {
     width: 35px;
@@ -962,10 +963,13 @@ input[type=number]::-webkit-outer-spin-button {
     padding-right: 20px;
   }
   .articles__item {
-    margin-top: 35px;
+    margin-top: 40px;
   }
   .articles__item-discr {
     padding-right: 40px;
+  }
+  .articles__item-discr .article__heading-block {
+    margin-bottom: 15px;
   }
   .articles__item-discr .article__heading-block .article-ttl {
     font-size: 34px;
@@ -1021,7 +1025,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-bottom: 100px;
   }
   .articles__filter {
-    margin-top: -10px;
+    margin-bottom: 0px;
   }
   .articles__filter-block img {
     width: 30px;
@@ -1054,7 +1058,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-right: 20px;
   }
   .articles__item {
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .articles__item-discr {
     padding-right: 20px;
@@ -1113,7 +1117,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-bottom: 100px;
   }
   .articles__filter {
-    margin-top: -10px;
+    margin-bottom: 15px;
   }
   .articles__filter-block img {
     width: 25px;
@@ -1154,6 +1158,9 @@ input[type=number]::-webkit-outer-spin-button {
   .articles__item-discr {
     padding-right: 20px;
   }
+  .articles__item-discr .article__heading-block {
+    margin-bottom: 10px;
+  }
   .articles__item-discr .article__heading-block .article-ttl {
     font-size: 28px;
   }
@@ -1165,9 +1172,9 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 20px;
   }
   .articles__pages-nav {
-    margin-top: 40px;
-    padding-left: 40px;
-    font-size: 26px;
+    margin-top: 35px;
+    padding-left: 25px;
+    font-size: 24px;
   }
   .articles__form {
     margin-top: 75px;
@@ -1199,5 +1206,103 @@ input[type=number]::-webkit-outer-spin-button {
     top: 5px;
     right: 5px;
     width: 100px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .articles {
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+  .articles__filter {
+    margin-bottom: 15px;
+  }
+  .articles__filter-block img {
+    width: 20px;
+  }
+  .articles__filter-block span {
+    font-size: 22px;
+    margin-left: 10px;
+  }
+  .articles__filter-block .articles__filter-categories {
+    top: -25px;
+    padding-top: 75px;
+  }
+  .articles__filter-block .articles__filter-categories li {
+    font-size: 22px;
+    padding: 5px 0;
+  }
+  .articles__filter-block .articles__filter-categories li:before {
+    width: 6px;
+    height: 6px;
+    margin-right: 7px;
+    margin-top: 9px;
+  }
+  .articles__filter-block .articles__filter-categories li:after {
+    width: 50%;
+    left: -50px;
+  }
+  .articles__filter-block .articles__filter-categories_show {
+    width: 270px;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .articles__item {
+    margin-top: 40px;
+  }
+  .articles__item-img {
+    display: none;
+  }
+  .articles__item-discr {
+    padding-right: 0px;
+  }
+  .articles__item-discr .article__heading-block {
+    margin-bottom: 15px;
+  }
+  .articles__item-discr .article__heading-block .article-ttl {
+    font-size: 22px;
+  }
+  .articles__item-discr .article__heading-block span {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .articles__item-discr .article__info p {
+    font-size: 20px;
+  }
+  .articles__pages-nav {
+    margin-top: 35px;
+    padding-left: 20px;
+    font-size: 22px;
+  }
+  .articles__form {
+    margin-top: 75px;
+  }
+  .articles__form-block {
+    padding: 40px 40px 50px 50px;
+  }
+  .articles__form-block h6 {
+    font-size: 20px;
+  }
+  .articles__form-block .input {
+    width: 200px;
+    margin-top: 10px;
+  }
+  .articles__form-block .input input {
+    font-size: 24px;
+  }
+  .articles__form-block .input:after {
+    width: 96%;
+  }
+  .articles__form-block label {
+    font-size: 18px;
+  }
+  .articles__form-block button {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .articles__form-block .articles-form__stamp {
+    top: 5px;
+    right: 5px;
+    width: 75px;
   }
 }
