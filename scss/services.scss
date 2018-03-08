@@ -1,0 +1,185 @@
+// to compile...
+
+@import "./_components/header&footer.scss";
+
+// Section Our Services
+.services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  &__heading {
+    h2 {
+      font-size: 46px;
+    }
+  }
+
+  &__block {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    &-item {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      height: 330px;
+
+      &-img {
+        width: 95%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      a {
+        margin-top: 15px;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        font-size: 30px;
+        color: #000;
+        line-height: 1;
+
+        span {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  &__lists {
+    margin-top: 50px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    ul {
+      margin: 0 40px;
+      padding: 0;
+      list-style: none;
+
+      li {
+        font-size: 30px;
+        margin: 25px 0;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        line-height: 0.75;
+
+        &:before {
+          display: block;
+          content: '';
+          width: 12px;
+          height: 12px;
+          background: url(../img/dot_red.png);
+          -webkit-filter:grayscale(100%);
+                  filter:grayscale(100%);
+          margin-right: 15px;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
