@@ -1,39 +1,148 @@
 // to compile...
 
-@import "./_components/header&footer.scss";
+@import "./_components/_header&footer.scss";
+@import "./_components/_emons-map.scss";
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.geography {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
 
 @media only screen and (max-width : 1199px) {
-
+  .geography {
+    padding-top: 50px;
+  }
 }
 
 @media only screen and (max-width : 991px) {
-
+  .geography {
+    padding-top: 70px;
+  }
 }
 
 @media only screen and (max-width : 767px) {
-
+  .geography {
+    padding-top: 50px;
+  }
 }
 
 @media only screen and (max-width : 576px) {
 
 }
 
+// Section Our Services
+@import "./_components/_section-services.scss";
+
+.services {
+  padding-top: 0px;
+  padding-bottom: 90px;
+
+  &__block {
+    margin-bottom: 0;
+  }
+}
+
 
 @media only screen and (max-width : 1199px) {
-
+  .services {
+    margin-top: -10px;
+    padding-bottom: 80px;
+  }
 }
 
 @media only screen and (max-width : 991px) {
-
+  .services {
+    margin-top: -30px;
+    padding-bottom: 75px;
+  }
 }
 
 @media only screen and (max-width : 767px) {
-
+  .services {
+    margin-top: -40px;
+    padding-bottom: 50px;
+  }
 }
 
-@media only screen and (max-width : 576px) {
+.facts {
+  padding: 65px 0;
+  background: #ffe096;
+  position: relative;
 
+  &__block {
+    margin-top: 40px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    &-item {
+      width: 270px;
+      margin: 20px 60px;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+
+      img {
+        max-width: 100%;
+      }
+
+      h6 {
+        width: 100%;
+        text-align: center;
+        font-size: 34px;
+        margin: 0;
+        margin-top: 30px;
+      }
+
+      span {
+        font-size: 50px;
+        color: $red;
+        text-align: center;
+        line-height: 0.75;
+
+        code {
+          background: transparent;
+          color: $red;
+        }
+      }
+
+      &:nth-child(2) {
+        -webkit-transform: translateY(60px);
+                transform: translateY(60px);
+      }
+    }
+  }
+
+  .screen-devider {
+    position: absolute;
+    left: 0;
+
+    &_01 {
+      top: 0;
+    }
+
+    &_02 {
+      bottom: 0;
+    }
+  }
 }
 
 
