@@ -347,6 +347,27 @@ input[type=number]::-webkit-outer-spin-button {
     &-email {
       font-size: 24px;
     }
+
+    &-nav {
+      padding-top: 100px;
+      padding-right: 20px;
+      padding-bottom: 25px;
+
+      ul {
+        li {
+          padding: 5px 0;
+          padding-left: 25px;
+
+          a {
+            font-size: 22px;
+          }
+
+          &:before {
+            width: 50%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -389,6 +410,27 @@ input[type=number]::-webkit-outer-spin-button {
 
     &-email {
       font-size: 18px;
+    }
+
+    &-nav {
+      padding-top: 80px;
+      padding-right: 15px;
+      padding-bottom: 25px;
+
+      ul {
+        li {
+          padding: 5px 0;
+          padding-left: 25px;
+
+          a {
+            font-size: 20px;
+          }
+
+          &:before {
+            width: 50%;
+          }
+        }
+      }
     }
   }
 }

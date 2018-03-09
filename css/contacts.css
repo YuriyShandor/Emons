@@ -101,7 +101,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: -25px;
+  margin-top: -15px;
   z-index: 120;
 }
 
@@ -119,6 +119,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .header h3 .red {
   font-size: 30px;
+}
+
+.header__number-mail {
+  line-height: 1;
 }
 
 .header-number {
@@ -181,10 +185,37 @@ input[type=number]::-webkit-outer-spin-button {
   text-decoration: none;
   -webkit-transition: all, .3s;
   transition: all, .3s;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header-nav ul li a:hover {
   color: #cc0000;
+}
+
+.header-nav ul li a:hover:before {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.header-nav ul li a:before {
+  display: block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: url(../img/dot_red.png);
+  background-size: contain;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  -webkit-filter: grayscale(200%);
+  filter: grayscale(200%);
+  -webkit-transition: all, .3s;
+  transition: all, .3s;
 }
 
 .header-nav_show {
@@ -244,7 +275,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 5px;
     padding-bottom: 10px;
   }
-  .header .container .row {
+  .header .row {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
@@ -274,6 +305,21 @@ input[type=number]::-webkit-outer-spin-button {
   .header-email {
     font-size: 24px;
   }
+  .header-nav {
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+  .header-nav ul li {
+    padding: 5px 0;
+    padding-left: 25px;
+  }
+  .header-nav ul li a {
+    font-size: 22px;
+  }
+  .header-nav ul li:before {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -302,6 +348,21 @@ input[type=number]::-webkit-outer-spin-button {
   .header-email {
     font-size: 18px;
   }
+  .header-nav {
+    padding-top: 80px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+  }
+  .header-nav ul li {
+    padding: 5px 0;
+    padding-left: 25px;
+  }
+  .header-nav ul li a {
+    font-size: 20px;
+  }
+  .header-nav ul li:before {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -312,31 +373,46 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 0 15px;
   }
   .header {
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 13px;
   }
   .header .row {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-  .header .emons-logo {
-    margin-bottom: 15px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .header .emons-logo .logo {
-    width: 100px;
+    width: 75px;
   }
   .header h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    width: 115px;
+    font-size: 14px;
   }
   .header h3 .red {
-    font-size: 22px;
+    font-size: 16px;
   }
   .header-number {
-    font-size: 20px;
+    font-size: 14px;
   }
   .header-email {
-    font-size: 18px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .header__number-mail {
+    width: 100%;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 10px;
   }
 }
 
