@@ -4,7 +4,7 @@
 
 // Section About Us
 .about-us {
-  padding-top: 65px;
+  padding-top: 95px;
 
   &__img {
     margin-top: 20px;
@@ -68,7 +68,7 @@
 
 @media only screen and (max-width : 1199px) {
   .about-us {
-    padding-top: 50px;
+    padding-top: 80px;
 
     &__img {
       margin-top: 20px;
@@ -110,7 +110,7 @@
 
 @media only screen and (max-width : 991px) {
   .about-us {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 70px;
 
     &__img {
@@ -211,18 +211,24 @@
 
 @media only screen and (max-width : 991px) {
   .history {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }
 
+// Section Rolling Stock
+@import "./_components/_section-stock.scss";
 
+// Section How We Work
+@import "./_components/_section-how-we-work.scss";
 
-@media only screen and (max-width : 1199px) {
-
+.we-work {
+  padding-top: 20px;
 }
 
 @media only screen and (max-width : 991px) {
-
+  .we-work {
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width : 767px) {
