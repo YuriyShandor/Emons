@@ -36,6 +36,8 @@
               justify-content: flex-end;
       height: 330px;
       margin: 35px 0;
+      -webkit-transition: all, .3s;
+      transition: all, .3s;
 
       &-img {
         width: 95%;
@@ -77,6 +79,11 @@
         span {
           color: $red;
         }
+      }
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
       }
     }
   }
