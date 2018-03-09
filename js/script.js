@@ -54,4 +54,22 @@ $(document).ready(function() {
     $('.articles__filter-categories li').removeClass('active');
     $(this).addClass('active');
   })
+
+  // For Video Presentation Window
+  $('.video-presentatio__btn').click(function() {
+    $('.video-presentation').addClass('show');
+  })
+  $('.tv-image_close').click(function() {
+    $('.video-presentation').removeClass('show');
+  })
+
+  // For Auxiliary Menu
+  var showAuxiliaryMenu = $('.services').offset();
+  $(window).scroll(function(){
+    if ($(window).scrollTop() > showAuxiliaryMenu.top - 150) {
+      $('.auxiliary-menu').addClass('show');
+    } else {
+      $('.auxiliary-menu').removeClass('show');
+    }
+  });
 });
