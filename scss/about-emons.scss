@@ -1,6 +1,6 @@
 // to compile...
 
-@import "./_components/header&footer.scss";
+@import "./_components/_header&footer.scss";
 
 // Section About Us
 .about-us {
@@ -67,37 +67,154 @@
 }
 
 @media only screen and (max-width : 1199px) {
+  .about-us {
+    padding-top: 50px;
 
+    &__img {
+      margin-top: 20px;
+    }
+
+    &__block {
+      margin-top: 50px;
+
+      &-item {
+        width: 440px;
+
+        h4 {
+          font-size: 34px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 24px;
+        }
+
+        &:nth-child(2) {
+          margin-left: auto;
+          -webkit-transform: translateY(-80px);
+                  transform: translateY(-80px);
+        }
+
+        &:nth-child(3) {
+          -webkit-transform: translateY(-160px);
+                  transform: translateY(-160px);
+
+          h4 {
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 70px;
 
+    &__img {
+      margin-top: 20px;
+    }
+
+    &__block {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 0px;
+
+      &-item {
+        width: 90%;
+        margin-top: 35px;
+
+        h4 {
+          font-size: 30px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 24px;
+        }
+
+        &:nth-child(2) {
+          margin-left: 0;
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px);
+        }
+
+        &:nth-child(3) {
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px);
+
+          h4 {
+            padding-right: 0px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
+    &__block {
+      &-item {
+        width: 95%;
+        margin-top: 35px;
+
+        h4 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 22px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
+    &__block {
+      &-item {
+        width: 95%;
+        margin-top: 30px;
+
+        h4 {
+          font-size: 26px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 
+// Section History
+@import "./_components/_section-history.scss";
 
-@media only screen and (max-width : 1199px) {
-
+.history {
+  padding-top: 0;
 }
+
 
 @media only screen and (max-width : 991px) {
-
+  .history {
+    padding-top: 50px;
+  }
 }
 
-@media only screen and (max-width : 767px) {
-
-}
-
-@media only screen and (max-width : 576px) {
-
-}
 
 
 @media only screen and (max-width : 1199px) {
