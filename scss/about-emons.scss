@@ -1,0 +1,134 @@
+// to compile...
+
+@import "./_components/header&footer.scss";
+
+// Section About Us
+.about-us {
+  padding-top: 65px;
+
+  &__img {
+    margin-top: 20px;
+
+    div {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__block {
+    margin-top: 60px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+
+    &-item {
+      width: 570px;
+
+      h4 {
+        margin: 0;
+        font-size: 36px;
+        color: $red;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      &:nth-child(2) {
+        margin-left: auto;
+        -webkit-transform: translateY(-80px);
+                transform: translateY(-80px);
+      }
+
+      &:nth-child(3) {
+        -webkit-transform: translateY(-160px);
+                transform: translateY(-160px);
+
+        h4 {
+          text-align: right;
+          padding-right: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
