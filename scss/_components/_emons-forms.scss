@@ -28,12 +28,12 @@
     position: absolute;
     -webkit-animation-name: emonsFormStamp;
             animation-name: emonsFormStamp;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
@@ -42,8 +42,8 @@
 
   @-webkit-keyframes emonsFormStamp {
     0% {
-      -webkit-transform: scale(3);
-              transform: scale(3);
+      -webkit-transform: scale(2);
+              transform: scale(2);
       opacity: 0;
     }
     100% {
@@ -55,8 +55,8 @@
 
   @keyframes emonsFormStamp {
     0% {
-      -webkit-transform: scale(3);
-              transform: scale(3);
+      -webkit-transform: scale(2);
+              transform: scale(2);
       opacity: 0;
     }
     100% {

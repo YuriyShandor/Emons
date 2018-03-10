@@ -671,6 +671,11 @@ input[type=number]::-webkit-outer-spin-button {
 
     &-socials {
       margin: 0 30px;
+
+      img {
+        -webkit-transform: scale(0.95);
+                transform: scale(0.95);
+      }
     }
 
     &-adress {
@@ -703,6 +708,11 @@ input[type=number]::-webkit-outer-spin-button {
 
     &-socials {
       margin: 0 30px;
+
+      img {
+        -webkit-transform: scale(0.75);
+                transform: scale(0.75);
+      }
     }
 
     &-adress {
@@ -734,6 +744,11 @@ input[type=number]::-webkit-outer-spin-button {
 
     &-socials {
       margin: 0 30px;
+
+      img {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
     }
 
     &-adress {

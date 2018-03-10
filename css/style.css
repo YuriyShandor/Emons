@@ -571,6 +571,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
   .footer-adress span {
     font-size: 24px;
   }
@@ -594,6 +598,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
   .footer-adress span {
     font-size: 22px;
   }
@@ -615,6 +623,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .footer-socials {
     margin: 0 30px;
+  }
+  .footer-socials img {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
   .footer-adress span {
     font-size: 18px;
@@ -688,7 +700,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .auxiliary-menu {
   position: fixed;
-  top: 90px;
+  top: 100px;
   right: 30px;
   z-index: 200;
   -webkit-transform: translateX(200px);
@@ -741,6 +753,69 @@ input[type=number]::-webkit-outer-spin-button {
 .auxiliary-menu:hover {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+}
+
+@media only screen and (max-width: 1199px) {
+  .auxiliary-menu {
+    top: 95px;
+    right: 20px;
+  }
+  .auxiliary-menu ul li a img {
+    width: 40px;
+  }
+  .auxiliary-menu ul li a span {
+    font-size: 22px;
+  }
+  .auxiliary-menu.show {
+    -webkit-transform: translateX(75px);
+    transform: translateX(75px);
+  }
+  .auxiliary-menu:hover {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .auxiliary-menu {
+    top: 115px;
+    right: 10px;
+  }
+  .auxiliary-menu ul li a img {
+    width: 30px;
+  }
+  .auxiliary-menu ul li a span {
+    font-size: 20px;
+  }
+  .auxiliary-menu.show {
+    -webkit-transform: translateX(65px);
+    transform: translateX(65px);
+  }
+  .auxiliary-menu:hover {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .auxiliary-menu {
+    top: 85px;
+    right: 0px;
+  }
+  .auxiliary-menu ul li a img {
+    width: 20px;
+  }
+  .auxiliary-menu ul li a span {
+    font-size: 18px;
+  }
+  .auxiliary-menu.show {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  .auxiliary-menu:hover {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 .geography {
