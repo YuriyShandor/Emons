@@ -571,6 +571,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
   .footer-adress span {
     font-size: 24px;
   }
@@ -594,6 +598,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
   .footer-adress span {
     font-size: 22px;
   }
@@ -615,6 +623,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .footer-socials {
     margin: 0 30px;
+  }
+  .footer-socials img {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
   .footer-adress span {
     font-size: 18px;
@@ -1085,6 +1097,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .stock__statistic-item h4 {
+  width: 100%;
   margin: 0;
   font-size: 60px;
   color: #cc0000;
@@ -1414,10 +1427,26 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
   padding: 0;
   font-size: 24px;
+  list-style: none;
 }
 
 .we-work__about ul li {
-  margin-left: 20px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.we-work__about ul li img {
+  display: block;
+  width: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  -webkit-filter: grayscale(200%);
+  filter: grayscale(200%);
 }
 
 .we-work__guarantees {
@@ -1476,9 +1505,6 @@ input[type=number]::-webkit-outer-spin-button {
   .we-work__about ul {
     font-size: 24px;
   }
-  .we-work__about ul li {
-    margin-left: 20px;
-  }
   .we-work__guarantees-item div img {
     width: 65px;
   }
@@ -1508,8 +1534,10 @@ input[type=number]::-webkit-outer-spin-button {
   .we-work__about ul {
     font-size: 20px;
   }
-  .we-work__about ul li {
-    margin-left: 20px;
+  .we-work__about ul li img {
+    width: 7px;
+    margin-right: 7px;
+    margin-top: 7px;
   }
   .we-work__guarantees-item div img {
     width: 60px;
@@ -1539,8 +1567,10 @@ input[type=number]::-webkit-outer-spin-button {
   .we-work__about ul {
     font-size: 18px;
   }
-  .we-work__about ul li {
-    margin-left: 20px;
+  .we-work__about ul li img {
+    width: 7px;
+    margin-right: 7px;
+    margin-top: 5px;
   }
   .we-work__guarantees-item div img {
     width: 50px;

@@ -571,6 +571,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
   .footer-adress span {
     font-size: 24px;
   }
@@ -594,6 +598,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
   .footer-adress span {
     font-size: 22px;
   }
@@ -615,6 +623,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .footer-socials {
     margin: 0 30px;
+  }
+  .footer-socials img {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
   .footer-adress span {
     font-size: 18px;
@@ -681,12 +693,12 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   -webkit-animation-name: emonsFormStamp;
   animation-name: emonsFormStamp;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -695,8 +707,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 @-webkit-keyframes emonsFormStamp {
   0% {
-    -webkit-transform: scale(3);
-    transform: scale(3);
+    -webkit-transform: scale(2);
+    transform: scale(2);
     opacity: 0;
   }
   100% {
@@ -708,8 +720,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 @keyframes emonsFormStamp {
   0% {
-    -webkit-transform: scale(3);
-    transform: scale(3);
+    -webkit-transform: scale(2);
+    transform: scale(2);
     opacity: 0;
   }
   100% {
@@ -768,6 +780,22 @@ input[type=number]::-webkit-outer-spin-button {
 .sea-transport__advanteges ul li {
   font-size: 24px;
   margin: 7px 0;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.sea-transport__advanteges ul li img {
+  display: block;
+  width: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+  -webkit-filter: grayscale(200%);
+  filter: grayscale(200%);
 }
 
 .sea-transport__meneger {
@@ -1089,6 +1117,11 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 22px;
     margin: 5px 0;
   }
+  .sea-transport__advanteges ul li img {
+    width: 7px;
+    margin-right: 7px;
+    margin-top: 8px;
+  }
   .sea-transport__meneger {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1215,6 +1248,11 @@ input[type=number]::-webkit-outer-spin-button {
   .sea-transport__advanteges ul li {
     font-size: 20px;
     margin: 5px 0;
+  }
+  .sea-transport__advanteges ul li img {
+    width: 7px;
+    margin-right: 7px;
+    margin-top: 7px;
   }
   .sea-transport__meneger span {
     font-size: 20px;

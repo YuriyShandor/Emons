@@ -51,6 +51,22 @@
       li {
         font-size: 24px;
         margin: 7px 0;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+
+        img {
+          display: block;
+          width: 10px;
+          margin-right: 10px;
+          margin-top: 8px;
+          -webkit-filter: grayscale(200%);
+                  filter: grayscale(200%);
+        }
       }
     }
   }
@@ -414,6 +430,12 @@
         li {
           font-size: 22px;
           margin: 5px 0;
+
+          img {
+            width: 7px;
+            margin-right: 7px;
+            margin-top: 8px;
+          }
         }
       }
     }
@@ -573,6 +595,12 @@
         li {
           font-size: 20px;
           margin: 5px 0;
+
+          img {
+            width: 7px;
+            margin-right: 7px;
+            margin-top: 7px;
+          }
         }
       }
     }
