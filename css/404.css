@@ -571,6 +571,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
   .footer-adress span {
     font-size: 24px;
   }
@@ -594,6 +598,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
   .footer-adress span {
     font-size: 22px;
   }
@@ -615,6 +623,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .footer-socials {
     margin: 0 30px;
+  }
+  .footer-socials img {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
   .footer-adress span {
     font-size: 18px;
@@ -652,7 +664,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .error-content {
   width: 100%;
-  padding-top: 55px;
+  padding-top: 100px;
   padding-bottom: 60px;
 }
 
