@@ -11,6 +11,10 @@ $red: #cc0000;
   //border: 1px solid red;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
   font-family: BeerMoney, Arial sans-serif;
   padding: 0;
@@ -23,7 +27,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden !important;
-  //padding-top: 140px;
+  padding-top: 87px;
   line-height: 1.2;
 }
 
@@ -81,10 +85,9 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 10px;
   padding-bottom: 20px;
   background: #ffe094;
-  position: relative;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
 
   .row {
@@ -153,15 +156,17 @@ input[type=number]::-webkit-outer-spin-button {
 
   &-nav {
     width: 0;
-    min-height: 100vh;
+    height: 100vh;
     background: rgba(255, 224, 148, 0.85);
     position: absolute;
     top: 0;
+    left: -40px;
     z-index: 105;
     padding-top: 150px;
     padding-right: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 25px;
     overflow-x: hidden;
+    overflow-y: visible;
     -webkit-transition: all, .7s ease-in;
     transition: all, .7s ease-in;
 
@@ -176,11 +181,18 @@ input[type=number]::-webkit-outer-spin-button {
         min-width: 100%;
         padding: 10px 0;
         position: relative;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
 
         &:before {
           display: block;
           content: '';
-          width: 85%;
+          width: 82%;
           height: 5px;
           position: absolute;
           bottom: 0;
@@ -195,13 +207,6 @@ input[type=number]::-webkit-outer-spin-button {
           text-decoration: none;
           -webkit-transition: all, .3s;
           transition: all, .3s;
-          display: -ms-flex;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
 
           &:hover {
             color: $red;
@@ -211,21 +216,16 @@ input[type=number]::-webkit-outer-spin-button {
                       filter: grayscale(0%);
             }
           }
+        }
 
-          &:before {
-            display: block;
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: url(../img/dot_red.png);
-            background-size: contain;
-            margin-right: 10px;
-            margin-bottom: 3px;
-            -webkit-filter: grayscale(200%);
-                    filter: grayscale(200%);
-            -webkit-transition: all, .3s;
-            transition: all, .3s;
-          }
+        img {
+          display: block;
+          width: 8px;
+          height: 8px;
+          margin-top: 8px;
+          margin-right: 10px;
+          -webkit-filter: grayscale(200%);
+                  filter: grayscale(200%);
         }
       }
     }
@@ -233,16 +233,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header-nav_show {
-  width: 385px;
+  width: 400px;
   padding-right: 20px;
-  padding-bottom: 25px;
+  padding-left: 40px;
   overflow-x: visible;
 }
 
 @media only screen and (max-width : 1199px) {
-  // body {
-  //   padding-top: 120px;
-  // }
+  body {
+    padding-top: 85px;
+  }
 
   .section-heading {
     h2 {
@@ -286,26 +286,15 @@ input[type=number]::-webkit-outer-spin-button {
 
     &-nav {
       padding-top: 150px;
-      padding-right: 20px;
       padding-bottom: 25px;
-
-      ul {
-        li {
-          padding-left: 25px;
-
-          a {
-            font-size: 24px;
-          }
-        }
-      }
     }
   }
 }
 
 @media only screen and (max-width : 991px) {
-  // body {
-  //   padding-top: 185px;
-  // }
+  body {
+    padding-top: 95px;
+  }
 
   .section-heading {
     h2 {
@@ -358,13 +347,15 @@ input[type=number]::-webkit-outer-spin-button {
 
     &-nav {
       padding-top: 100px;
-      padding-right: 20px;
       padding-bottom: 25px;
+      top: -27px;
+      left: -30px;
 
       ul {
+        top: -25px;
+
         li {
-          padding: 5px 0;
-          padding-left: 25px;
+          padding: 7px 0;
 
           a {
             font-size: 22px;
@@ -376,6 +367,12 @@ input[type=number]::-webkit-outer-spin-button {
         }
       }
     }
+  }
+
+  .header-nav_show {
+    width: 375px;
+    padding-right: 20px;
+    padding-left: 30px;
   }
 }
 
@@ -422,24 +419,25 @@ input[type=number]::-webkit-outer-spin-button {
 
     &-nav {
       padding-top: 80px;
-      padding-right: 15px;
-      padding-bottom: 25px;
+      top: -15px;
+      left: -25px;
 
       ul {
         li {
           padding: 5px 0;
-          padding-left: 25px;
 
           a {
             font-size: 20px;
           }
-
-          &:before {
-            width: 50%;
-          }
         }
       }
     }
+  }
+
+  .header-nav_show {
+    width: 340px;
+    padding-right: 15px;
+    padding-left: 25px;
   }
 }
 
@@ -471,6 +469,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .emons-logo {
+      position: static;
+
       .logo {
         width: 75px;
       }
@@ -493,6 +493,28 @@ input[type=number]::-webkit-outer-spin-button {
       font-size: 14px;
       margin-right: 10px;
     }
+
+    &-nav {
+      padding-top: 100px;
+      padding-bottom: 25px;
+      left: 0;
+
+      ul {
+        li {
+          padding: 5px 0;
+
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .header-nav_show {
+    width: 340px;
+    padding-right: 5px;
+    padding-left: 25px;
   }
 }
 
@@ -513,7 +535,6 @@ input[type=number]::-webkit-outer-spin-button {
               justify-content: space-between;
       margin-top: 10px;
     }
-
   }
 }
 
@@ -597,7 +618,13 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 55px;
   padding-bottom: 23px;
   background: #ffe094;
-  position: relative;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(95%);
+          transform: translateY(95%);
+  -webkit-transition: all, 0.7s ease-out;
+  transition: all, 0.7s ease-out;
 
   .row {
     display: -ms-flex;
@@ -659,6 +686,11 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     top: -3px;
     left: 0;
+  }
+
+  &.show {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

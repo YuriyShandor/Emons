@@ -37,6 +37,21 @@ $(document).ready(function() {
     ]
   });
 
+  // Show Footer
+  var footerKeyCode = undefined;
+  $(window).keypress(function (event) {
+    footerKeyCode = event.keyCode;
+    console.log(footerKeyCode);
+  })
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() + $(window).height() + 3 > $(document).height() || footerKeyCode == 32) {
+      $('.footer').addClass('show');
+    } else {
+      $('.footer').removeClass('show');
+    }
+  });
+
   // For vacancy modal window
   $('.vacancy__interest').click(function() {
     $('.modal-form').addClass('modal-form_show');
