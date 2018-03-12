@@ -816,7 +816,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .vacancy {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 160px;
   }
   .vacancy__about {
@@ -855,7 +855,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 991px) {
   .vacancy {
-    padding-top: 85px;
+    padding-top: 75px;
     padding-bottom: 125px;
   }
   .vacancy__about {
@@ -894,7 +894,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 767px) {
   .vacancy {
-    padding-top: 75px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
   .vacancy__about {
@@ -933,7 +933,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 576px) {
   .vacancy {
-    padding-top: 50px;
     padding-bottom: 100px;
   }
   .vacancy__about {

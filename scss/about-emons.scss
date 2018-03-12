@@ -7,7 +7,14 @@
   padding-top: 100px;
 
   &__img {
-    margin-top: 20px;
+    margin-top: 30px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     div {
       width: 100%;
@@ -68,7 +75,7 @@
 
 @media only screen and (max-width : 1199px) {
   .about-us {
-    padding-top: 80px;
+    padding-top: 90px;
 
     &__img {
       margin-top: 20px;
@@ -181,7 +188,6 @@
 
 @media only screen and (max-width : 576px) {
   .about-us {
-    padding-top: 50px;
     padding-bottom: 50px;
 
     &__block {

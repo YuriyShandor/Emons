@@ -846,7 +846,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .articles .section-heading {
-  margin-top: 65px;
+  margin-top: 38px;
 }
 
 .articles__item {
@@ -1015,11 +1015,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .articles {
-    padding-top: 30px;
     padding-bottom: 100px;
   }
   .articles__filter {
-    margin-bottom: -5px;
+    margin-top: 20px;
   }
   .articles__filter-block img {
     width: 35px;
@@ -1052,6 +1051,9 @@ input[type=number]::-webkit-outer-spin-button {
     width: 385px;
     padding-left: 40px;
     padding-right: 20px;
+  }
+  .articles .section-heading {
+    margin-top: 40px;
   }
   .articles__item {
     margin-top: 40px;
@@ -1112,11 +1114,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 991px) {
   .articles {
-    padding-top: 30px;
     padding-bottom: 100px;
-  }
-  .articles__filter {
-    margin-bottom: 0px;
   }
   .articles__filter-block img {
     width: 30px;
@@ -1148,8 +1146,11 @@ input[type=number]::-webkit-outer-spin-button {
     padding-left: 30px;
     padding-right: 20px;
   }
+  .articles .section-heading {
+    margin-top: 30px;
+  }
   .articles__item {
-    margin-top: 40px;
+    margin-top: 29px;
   }
   .articles__item-discr {
     padding-right: 20px;
@@ -1204,11 +1205,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 767px) {
   .articles {
-    padding-top: 30px;
     padding-bottom: 100px;
   }
   .articles__filter {
-    margin-bottom: 15px;
+    margin-top: 15px;
   }
   .articles__filter-block img {
     width: 25px;
@@ -1239,6 +1239,9 @@ input[type=number]::-webkit-outer-spin-button {
     width: 300px;
     padding-left: 30px;
     padding-right: 20px;
+  }
+  .articles .section-heading {
+    margin-top: 13px;
   }
   .articles__item {
     margin-top: 30px;
@@ -1302,11 +1305,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 576px) {
   .articles {
-    padding-top: 30px;
     padding-bottom: 100px;
-  }
-  .articles__filter {
-    margin-bottom: 15px;
   }
   .articles__filter-block img {
     width: 20px;

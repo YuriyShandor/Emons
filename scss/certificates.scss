@@ -4,7 +4,7 @@
 
 // Section Certificates
 .certificates {
-  padding-top: 135px;
+  padding-top: 100px;
   padding-bottom: 70px;
 
   &__block {
@@ -55,7 +55,7 @@
 
 @media only screen and (max-width : 1199px) {
   .certificates {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 50px;
 
     &__block {
@@ -89,7 +89,7 @@
 
 @media only screen and (max-width : 991px) {
   .certificates {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 50px;
 
     &__block {

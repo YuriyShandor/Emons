@@ -571,6 +571,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
   .footer-adress span {
     font-size: 24px;
   }
@@ -594,6 +598,10 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-socials {
     margin: 0 30px;
   }
+  .footer-socials img {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
   .footer-adress span {
     font-size: 22px;
   }
@@ -615,6 +623,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .footer-socials {
     margin: 0 30px;
+  }
+  .footer-socials img {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
   .footer-adress span {
     font-size: 18px;
@@ -681,12 +693,12 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   -webkit-animation-name: emonsFormStamp;
   animation-name: emonsFormStamp;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -695,8 +707,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 @-webkit-keyframes emonsFormStamp {
   0% {
-    -webkit-transform: scale(3);
-    transform: scale(3);
+    -webkit-transform: scale(2);
+    transform: scale(2);
     opacity: 0;
   }
   100% {
@@ -708,8 +720,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 @keyframes emonsFormStamp {
   0% {
-    -webkit-transform: scale(3);
-    transform: scale(3);
+    -webkit-transform: scale(2);
+    transform: scale(2);
     opacity: 0;
   }
   100% {
@@ -720,7 +732,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .blog-m {
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 120px;
 }
 
@@ -919,7 +931,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .blog-m {
-    padding-top: 75px;
+    padding-top: 90px;
     padding-bottom: 100px;
   }
   .blog-m__ttl {
@@ -1000,7 +1012,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 991px) {
   .blog-m {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 75px;
   }
   .blog-m__ttl {
@@ -1163,7 +1175,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 576px) {
   .blog-m {
-    padding-top: 50px;
     padding-bottom: 50px;
   }
   .blog-m__ttl {

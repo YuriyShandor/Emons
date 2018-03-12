@@ -6,11 +6,17 @@
 // Section Sea Transportation
 
 .sea-transport {
-  padding-top: 25px;
+  padding-top: 100px;
   padding-bottom: 75px;
 
   &__img {
-    margin-bottom: 50px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     div {
       padding: 0;
@@ -279,7 +285,7 @@
 
 @media only screen and (max-width : 1199px) {
   .sea-transport {
-    padding-top: 5px;
+    padding-top: 90px;
     padding-bottom: 75px;
 
     &__img {
@@ -406,7 +412,7 @@
 
 @media only screen and (max-width : 991px) {
   .sea-transport {
-    padding-top: 5px;
+    padding-top: 75px;
     padding-bottom: 75px;
 
     &__img {
@@ -571,7 +577,7 @@
 
 @media only screen and (max-width : 767px) {
   .sea-transport {
-    padding-top: 5px;
+    padding-top: 50px;
     padding-bottom: 75px;
 
     &__img {
@@ -708,7 +714,6 @@
 
 @media only screen and (max-width : 576px) {
   .sea-transport {
-    padding-top: 5px;
     padding-bottom: 75px;
 
     &__img {

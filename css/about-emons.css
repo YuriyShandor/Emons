@@ -667,7 +667,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .about-us__img {
-  margin-top: 20px;
+  margin-top: 30px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about-us__img div {
@@ -727,7 +734,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .about-us {
-    padding-top: 80px;
+    padding-top: 90px;
   }
   .about-us__img {
     margin-top: 20px;
@@ -819,7 +826,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 576px) {
   .about-us {
-    padding-top: 50px;
     padding-bottom: 50px;
   }
   .about-us__block-item {
@@ -835,7 +841,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .history {
-  padding-top: 95px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -898,7 +904,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .history {
-    padding-top: 75px;
+    padding-top: 90px;
     padding-bottom: 80px;
   }
   .history__img {
@@ -925,7 +931,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 991px) {
   .history {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 75px;
   }
   .history__img {
@@ -1012,7 +1018,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .stock {
-  padding-top: 75px;
+  padding-top: 100px;
   padding-bottom: 160px;
 }
 
@@ -1151,7 +1157,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .stock {
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 160px;
   }
   .stock__about {
@@ -1397,7 +1403,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .we-work {
-  padding-top: 95px;
+  padding-top: 100px;
   padding-bottom: 90px;
 }
 
@@ -1489,7 +1495,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .we-work {
-    padding-top: 95px;
+    padding-top: 90px;
   }
   .we-work__about {
     margin-top: 50px;

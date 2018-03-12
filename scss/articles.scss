@@ -118,7 +118,7 @@
   }
 
   .section-heading {
-    margin-top: 65px;
+    margin-top: 38px;
   }
 
   &__item {
@@ -292,11 +292,10 @@
 
 @media only screen and (max-width : 1199px) {
   .articles {
-    padding-top: 30px;
     padding-bottom: 100px;
 
     &__filter {
-      margin-bottom: -5px;
+      margin-top: 20px;
 
       &-block {
         img {
@@ -338,6 +337,10 @@
           padding-right: 20px;
         }
       }
+    }
+
+    .section-heading {
+      margin-top: 40px;
     }
 
     &__item {
@@ -417,12 +420,9 @@
 
 @media only screen and (max-width : 991px) {
   .articles {
-    padding-top: 30px;
     padding-bottom: 100px;
 
     &__filter {
-      margin-bottom: 0px;
-
       &-block {
         img {
           width: 30px;
@@ -463,8 +463,12 @@
       }
     }
 
+    .section-heading {
+      margin-top: 30px;
+    }
+
     &__item {
-      margin-top: 40px;
+      margin-top: 29px;
 
       &-discr {
         padding-right: 20px;
@@ -538,11 +542,10 @@
 
 @media only screen and (max-width : 767px) {
   .articles {
-    padding-top: 30px;
     padding-bottom: 100px;
 
     &__filter {
-      margin-bottom: 15px;
+      margin-top: 15px;
 
       &-block {
         img {
@@ -582,6 +585,10 @@
           padding-right: 20px;
         }
       }
+    }
+
+    .section-heading {
+      margin-top: 13px;
     }
 
     &__item {
@@ -665,12 +672,9 @@
 
 @media only screen and (max-width : 576px) {
   .articles {
-    padding-top: 30px;
     padding-bottom: 100px;
 
     &__filter {
-      margin-bottom: 15px;
-
       &-block {
         img {
           width: 20px;

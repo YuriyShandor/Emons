@@ -737,7 +737,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .comand {
-    padding-top: 75px;
+    padding-top: 90px;
     padding-bottom: 110px;
   }
   .comand__about {
@@ -758,7 +758,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 991px) {
   .comand {
-    padding-top: 70px;
+    padding-top: 75px;
     padding-bottom: 100px;
   }
   .comand__about {
@@ -807,7 +807,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 576px) {
   .comand {
-    padding-top: 50px;
     padding-bottom: 75px;
   }
   .comand__about {

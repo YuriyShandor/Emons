@@ -663,7 +663,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .vacancies {
-  padding-top: 85px;
+  padding-top: 100px;
   padding-bottom: 175px;
 }
 
@@ -836,7 +836,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .vacancies {
-    padding-top: 75px;
+    padding-top: 90px;
     padding-bottom: 125px;
   }
   .vacancies__img {
