@@ -9,11 +9,11 @@
   padding-bottom: 180px;
 
   &__about {
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 75px;
 
     div {
-      height: 210px;
+      height: 160px;
       display: -ms-flex;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -28,15 +28,16 @@
 
       &:nth-child(1) {
         padding-left: 15px;
+        margin-left: 25px;
 
         span {
-          font-size: 36px;
+          font-size: 32px;
         }
       }
 
       &:nth-child(2) {
         span {
-          font-size: 48px;
+          font-size: 38px;
           color: $red;
         }
       }
@@ -63,7 +64,7 @@
                 align-items: flex-start;
 
         &:first-child {
-          margin-top: 50px;
+          margin-top: 20px;
         }
 
         img {
@@ -98,20 +99,20 @@
 
     &__about {
       margin-top: 50px;
-      margin-bottom: 75px;
+      margin-bottom: 60px;
 
       div {
-        height: 210px;
+        height: 150px;
 
         &:nth-child(1) {
           span {
-            font-size: 34px;
+            font-size: 32px;
           }
         }
 
         &:nth-child(2) {
           span {
-            font-size: 46px;
+            font-size: 36px;
           }
         }
       }
@@ -124,7 +125,7 @@
 
         li {
           &:first-child {
-            margin-top: 40px;
+            margin-top: 15px;
           }
 
           img {
@@ -154,10 +155,10 @@
 
     &__about {
       margin-top: 50px;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
 
       div {
-        height: 200px;
+        height: 140px;
 
         &:nth-child(1) {
           span {
@@ -167,7 +168,7 @@
 
         &:nth-child(2) {
           span {
-            font-size: 36px;
+            font-size: 34px;
           }
         }
       }
@@ -180,7 +181,7 @@
 
         li {
           &:first-child {
-            margin-top: 40px;
+            margin-top: 10px;
           }
 
           img {
@@ -209,11 +210,11 @@
     padding-bottom: 100px;
 
     &__about {
-      margin-top: 40px;
-      margin-bottom: 50px;
+      margin-top: 30px;
+      margin-bottom: 30px;
 
       div {
-        height: 170px;
+        height: 100px;
 
         &:nth-child(1) {
           span {
@@ -236,7 +237,7 @@
 
         li {
           &:first-child {
-            margin-top: 40px;
+            margin-top: 10px;
           }
 
           img {
@@ -264,13 +265,15 @@
     padding-bottom: 100px;
 
     &__about {
-      margin-top: 40px;
-      margin-bottom: 50px;
+      margin-top: 30px;
+      margin-bottom: 30px;
 
       div {
-        height: 110px;
+        height: 80px;
 
         &:nth-child(1) {
+          margin-left: 0;
+
           span {
             font-size: 16px;
           }
