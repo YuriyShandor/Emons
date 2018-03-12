@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: BeerMoney, Arial sans-serif;
   padding: 0;
@@ -20,6 +24,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   overflow-x: hidden !important;
+  padding-top: 87px;
   line-height: 1.2;
 }
 
@@ -76,7 +81,9 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 10px;
   padding-bottom: 20px;
   background: #ffe094;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 
@@ -146,15 +153,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .header-nav {
   width: 0;
-  min-height: 100vh;
+  height: 100vh;
   background: rgba(255, 224, 148, 0.85);
   position: absolute;
   top: 0;
+  left: -40px;
   z-index: 105;
   padding-top: 150px;
   padding-right: 0px;
   padding-bottom: 25px;
   overflow-x: hidden;
+  overflow-y: visible;
   -webkit-transition: all, .7s ease-in;
   transition: all, .7s ease-in;
 }
@@ -222,11 +231,14 @@ input[type=number]::-webkit-outer-spin-button {
 .header-nav_show {
   width: 400px;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 40px;
   overflow-x: visible;
 }
 
 @media only screen and (max-width: 1199px) {
+  body {
+    padding-top: 85px;
+  }
   .section-heading h2 {
     font-size: 46px;
   }
@@ -264,6 +276,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (max-width: 991px) {
+  body {
+    padding-top: 95px;
+  }
   .section-heading h2 {
     font-size: 42px;
   }
@@ -305,6 +320,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 100px;
     padding-bottom: 25px;
     top: -27px;
+    left: -30px;
   }
   .header-nav ul {
     top: -25px;
@@ -321,11 +337,14 @@ input[type=number]::-webkit-outer-spin-button {
   .header-nav_show {
     width: 375px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 }
 
 @media only screen and (max-width: 767px) {
+  body {
+    padding-top: 75px;
+  }
   .section-heading h2 {
     font-size: 36px;
   }
@@ -354,6 +373,7 @@ input[type=number]::-webkit-outer-spin-button {
   .header-nav {
     padding-top: 80px;
     top: -15px;
+    left: -25px;
   }
   .header-nav ul li {
     padding: 5px 0;
@@ -364,11 +384,14 @@ input[type=number]::-webkit-outer-spin-button {
   .header-nav_show {
     width: 340px;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 25px;
   }
 }
 
 @media only screen and (max-width: 576px) {
+  body {
+    padding-top: 60px;
+  }
   .section-heading h2 {
     font-size: 32px;
   }
@@ -407,7 +430,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 10px;
   }
   .header-nav {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 25px;
     left: 0;
   }
@@ -425,6 +448,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (max-width: 430px) {
+  body {
+    padding-top: 88px;
+  }
   .header__number-mail {
     width: 100%;
     display: -ms-flex;
@@ -514,7 +540,13 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 55px;
   padding-bottom: 23px;
   background: #ffe094;
-  position: relative;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(95%);
+  transform: translateY(95%);
+  -webkit-transition: all, 0.7s ease-out;
+  transition: all, 0.7s ease-out;
 }
 
 .footer .row {
@@ -577,6 +609,11 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   top: -3px;
   left: 0;
+}
+
+.footer.show {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1030,6 +1067,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .history {
   padding-top: 0;
+  margin-top: -30px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1423,6 +1461,22 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
+.stock {
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 991px) {
+  .stock {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .stock {
+    padding-top: 30px;
+  }
+}
+
 .we-work {
   padding-top: 100px;
   padding-bottom: 90px;
@@ -1610,17 +1664,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .we-work {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 @media only screen and (max-width: 991px) {
   .we-work {
     padding-top: 0;
+    margin-top: -20px;
   }
 }
 
 .geography {
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 90px;
 }
 
@@ -1656,7 +1711,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 1199px) {
   .geography {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 80px;
   }
 }
@@ -1670,6 +1725,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 767px) {
   .geography {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }

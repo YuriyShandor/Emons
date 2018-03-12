@@ -212,6 +212,7 @@
 
 .history {
   padding-top: 0;
+  margin-top: -30px;
 }
 
 
@@ -224,22 +225,39 @@
 // Section Rolling Stock
 @import "./_components/_section-stock.scss";
 
+.stock {
+  padding-top: 60px;
+}
+
+@media only screen and (max-width : 991px) {
+  .stock {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .stock {
+    padding-top: 30px;
+  }
+}
+
 // Section How We Work
 @import "./_components/_section-how-we-work.scss";
 
 .we-work {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 @media only screen and (max-width : 991px) {
   .we-work {
     padding-top: 0;
+    margin-top: -20px;
   }
 }
 
 //Section Geography
 .geography {
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 90px;
 }
 
@@ -247,7 +265,7 @@
 
 @media only screen and (max-width : 1199px) {
   .geography {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 80px;
   }
 }
@@ -261,7 +279,7 @@
 
 @media only screen and (max-width : 767px) {
   .geography {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }
 

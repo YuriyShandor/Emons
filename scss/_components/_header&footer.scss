@@ -377,9 +377,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (max-width : 767px) {
-  // body {
-  //   padding-top: 155px;
-  // }
+  body {
+    padding-top: 75px;
+  }
 
   .section-heading {
     h2 {
@@ -442,9 +442,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (max-width : 576px) {
-  // body {
-  //   padding-top: 140px;
-  // }
+  body {
+    padding-top: 60px;
+  }
 
   .section-heading {
     h2 {
@@ -519,9 +519,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (max-width : 430px) {
-  // body {
-  //   padding-top: 195px;
-  // }
+  body {
+    padding-top: 88px;
+  }
 
   .header {
     &__number-mail {

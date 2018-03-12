@@ -342,6 +342,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (max-width: 767px) {
+  body {
+    padding-top: 75px;
+  }
   .section-heading h2 {
     font-size: 36px;
   }
@@ -386,6 +389,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (max-width: 576px) {
+  body {
+    padding-top: 60px;
+  }
   .section-heading h2 {
     font-size: 32px;
   }
@@ -442,6 +448,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (max-width: 430px) {
+  body {
+    padding-top: 88px;
+  }
   .header__number-mail {
     width: 100%;
     display: -ms-flex;
