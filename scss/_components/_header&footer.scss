@@ -156,13 +156,13 @@ input[type=number]::-webkit-outer-spin-button {
 
   &-nav {
     width: 0;
-    height: 100vh;
+    min-height: 100vh;
     background: rgba(255, 224, 148, 0.85);
     position: absolute;
     top: 0;
     left: -40px;
     z-index: 105;
-    padding-top: 150px;
+    padding-top: 170px;
     padding-right: 0px;
     padding-bottom: 25px;
     overflow-x: hidden;
@@ -192,7 +192,7 @@ input[type=number]::-webkit-outer-spin-button {
         &:before {
           display: block;
           content: '';
-          width: 82%;
+          width: 83%;
           height: 5px;
           position: absolute;
           bottom: 0;
@@ -201,6 +201,7 @@ input[type=number]::-webkit-outer-spin-button {
         }
 
         a {
+          margin: 0;
           min-width: 100%;
           font-size: 24px;
           color: #000;
@@ -346,7 +347,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     &-nav {
-      padding-top: 100px;
+      padding-top: 77px;
       padding-bottom: 25px;
       top: -27px;
       left: -30px;
@@ -362,7 +363,8 @@ input[type=number]::-webkit-outer-spin-button {
           }
 
           &:before {
-            width: 50%;
+            width: 87%;
+            left: -70px;
           }
         }
       }
@@ -418,13 +420,17 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     &-nav {
-      padding-top: 80px;
+      padding-top: 84px;
       top: -15px;
       left: -25px;
 
       ul {
         li {
           padding: 5px 0;
+
+          &:before {
+            width: 86%;
+          }
 
           a {
             font-size: 20px;
@@ -495,13 +501,17 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     &-nav {
-      padding-top: 100px;
+      padding-top: 110px;
       padding-bottom: 25px;
       left: 0;
 
       ul {
         li {
           padding: 5px 0;
+
+          &:before {
+            width: 83%;
+          }
 
           a {
             font-size: 20px;

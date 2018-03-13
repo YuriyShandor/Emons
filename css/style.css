@@ -751,12 +751,6 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .auxiliary-menu {
   position: fixed;
   top: 100px;
@@ -878,25 +872,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .geography {
-  padding-top: 60px;
   padding-bottom: 90px;
-}
-
-@media only screen and (max-width: 1199px) {
-  .geography {
-    padding-top: 50px;
-  }
 }
 
 @media only screen and (max-width: 991px) {
   .geography {
-    padding-top: 70px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .geography {
-    padding-top: 50px;
+    padding-bottom: 75px;
   }
 }
 
