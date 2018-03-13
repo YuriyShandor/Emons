@@ -6,7 +6,7 @@
 .auxiliary-menu {
   position: fixed;
   top: 100px;
-  right: 30px;
+  right: 5px;
   z-index: 200;
   -webkit-transform: translateX(200px);
           transform: translateX(200px);
@@ -54,8 +54,8 @@
   }
 
   &.show {
-    -webkit-transform: translateX(90px);
-            transform: translateX(90px);
+    -webkit-transform: translateX(65px);
+            transform: translateX(65px);
   }
 
   &:hover {
@@ -67,7 +67,6 @@
 @media only screen and (max-width : 1199px) {
   .auxiliary-menu {
     top: 95px;
-    right: 20px;
 
     ul {
       li {
@@ -78,37 +77,6 @@
 
           span {
             font-size: 22px;
-          }
-        }
-      }
-    }
-
-    &.show {
-      -webkit-transform: translateX(75px);
-              transform: translateX(75px);
-    }
-
-    &:hover {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-  }
-}
-
-@media only screen and (max-width : 991px) {
-  .auxiliary-menu {
-    top: 115px;
-    right: 10px;
-
-    ul {
-      li {
-        a {
-          img {
-            width: 30px;
-          }
-
-          span {
-            font-size: 20px;
           }
         }
       }
@@ -126,10 +94,40 @@
   }
 }
 
+@media only screen and (max-width : 991px) {
+  .auxiliary-menu {
+    top: 115px;
+
+    ul {
+      li {
+        a {
+          img {
+            width: 30px;
+          }
+
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    &.show {
+      -webkit-transform: translateX(55px);
+              transform: translateX(55px);
+    }
+
+    &:hover {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+}
+
 @media only screen and (max-width : 767px) {
   .auxiliary-menu {
     top: 85px;
-    right: 0px;
+    right: 1px;
 
     ul {
       li {

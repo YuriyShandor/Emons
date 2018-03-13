@@ -563,10 +563,22 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .btn-to-top.show {
-  right: 10px;
+  right: 15px;
 }
 
 @media only screen and (max-width: 991px) {
+  .btn-to-top {
+    bottom: 10px;
+  }
+  .btn-to-top img {
+    width: 50px;
+  }
+  .btn-to-top.show {
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .btn-to-top {
     bottom: 10px;
   }
@@ -587,8 +599,8 @@ input[type=number]::-webkit-outer-spin-button {
   left: 0;
   bottom: 0;
   z-index: 50;
-  -webkit-transform: translateY(120%);
-  transform: translateY(120%);
+  -webkit-transform: translateY(115%);
+  transform: translateY(115%);
   -webkit-transition: all, 0.5s ease-out;
   transition: all, 0.5s ease-out;
 }
@@ -711,7 +723,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .footer-btn_show span {
   position: absolute;
-  top: 25% !important;
+  top: 30% !important;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -760,6 +772,8 @@ input[type=number]::-webkit-outer-spin-button {
   .footer {
     padding-top: 20px;
     padding-bottom: 20px;
+    -webkit-transform: translateY(112%);
+    transform: translateY(112%);
   }
   .footer-number h2 {
     font-size: 32px;
@@ -779,13 +793,13 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 22px;
   }
   .footer.show_scroll .footer-btn_show {
-    top: -50px;
+    top: -40px;
   }
   .footer.show_click .footer-btn_show {
-    top: -50px;
+    top: -40px;
   }
   .footer-btn_show {
-    top: -25px;
+    top: -40px;
   }
   .footer-btn_show img {
     width: 200px;
@@ -793,9 +807,6 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-btn_show span {
     top: 25% !important;
     font-size: 22px;
-  }
-  .footer-btn_show:hover {
-    top: -50px;
   }
 }
 
@@ -821,13 +832,13 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 18px;
   }
   .footer.show_scroll .footer-btn_show {
-    top: -40px;
+    top: -35px;
   }
   .footer.show_click .footer-btn_show {
-    top: -40px;
+    top: -35px;
   }
   .footer-btn_show {
-    top: -25px;
+    top: -35px;
   }
   .footer-btn_show img {
     width: 175px;
@@ -835,9 +846,6 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-btn_show span {
     top: 20% !important;
     font-size: 20px;
-  }
-  .footer-btn_show:hover {
-    top: -40px;
   }
 }
 
@@ -902,7 +910,7 @@ input[type=number]::-webkit-outer-spin-button {
 .auxiliary-menu {
   position: fixed;
   top: 100px;
-  right: 30px;
+  right: 5px;
   z-index: 200;
   -webkit-transform: translateX(200px);
   transform: translateX(200px);
@@ -947,8 +955,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .auxiliary-menu.show {
-  -webkit-transform: translateX(90px);
-  transform: translateX(90px);
+  -webkit-transform: translateX(65px);
+  transform: translateX(65px);
 }
 
 .auxiliary-menu:hover {
@@ -959,34 +967,12 @@ input[type=number]::-webkit-outer-spin-button {
 @media only screen and (max-width: 1199px) {
   .auxiliary-menu {
     top: 95px;
-    right: 20px;
   }
   .auxiliary-menu ul li a img {
     width: 40px;
   }
   .auxiliary-menu ul li a span {
     font-size: 22px;
-  }
-  .auxiliary-menu.show {
-    -webkit-transform: translateX(75px);
-    transform: translateX(75px);
-  }
-  .auxiliary-menu:hover {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .auxiliary-menu {
-    top: 115px;
-    right: 10px;
-  }
-  .auxiliary-menu ul li a img {
-    width: 30px;
-  }
-  .auxiliary-menu ul li a span {
-    font-size: 20px;
   }
   .auxiliary-menu.show {
     -webkit-transform: translateX(65px);
@@ -998,10 +984,30 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .auxiliary-menu {
+    top: 115px;
+  }
+  .auxiliary-menu ul li a img {
+    width: 30px;
+  }
+  .auxiliary-menu ul li a span {
+    font-size: 20px;
+  }
+  .auxiliary-menu.show {
+    -webkit-transform: translateX(55px);
+    transform: translateX(55px);
+  }
+  .auxiliary-menu:hover {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .auxiliary-menu {
     top: 85px;
-    right: 0px;
+    right: 1px;
   }
   .auxiliary-menu ul li a img {
     width: 20px;
@@ -1104,6 +1110,7 @@ input[type=number]::-webkit-outer-spin-button {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  text-decoration: none;
   font-size: 30px;
   color: #000;
   line-height: 1;
