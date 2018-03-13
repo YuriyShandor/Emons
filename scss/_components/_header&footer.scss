@@ -550,7 +550,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 // Section trasted
 .trasted {
-  padding-bottom: 140px;
+  padding-bottom: 275px;
 
   &-slider {
     margin: 0 auto;
@@ -594,15 +594,11 @@ input[type=number]::-webkit-outer-spin-button {
       right: 20px;
     }
   }
-
-  &.footer-margin {
-    padding-bottom: 200px;
-  }
 }
 
 @media only screen and (max-width : 1199px) {
   .trasted {
-    padding-bottom: 120px;
+    padding-bottom: 240px;
 
     .trasted-slider__block {
       margin-top: 50px;
@@ -612,7 +608,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width : 991px) {
   .trasted {
-    padding-bottom: 75px;
+    padding-bottom: 210px;
 
     .trasted-slider__block {
       margin-top: 40px;
@@ -622,14 +618,20 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width : 767px) {
   .trasted {
-    padding-bottom: 50px;
+    padding-bottom: 200px;
+  }
+}
+
+@media only screen and (max-width : 448px) {
+  .trasted {
+    padding-bottom: 275px;
   }
 }
 
 // Btn to top
 .btn-to-top {
   position: fixed;
-  bottom: 25px;
+  bottom: 15px;
   right: -100px;
   z-index: 500;
   -webkit-transition: all, .5s;
@@ -644,6 +646,28 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
+@media only screen and (max-width : 991px) {
+  .btn-to-top {
+    bottom: 10px;
+
+    img {
+      width: 50px;
+    }
+
+    &.show {
+      right: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
 // Footer
 .footer {
   width: 100%;
@@ -655,8 +679,8 @@ input[type=number]::-webkit-outer-spin-button {
   bottom: 0;
   -webkit-transform: translateY(103%);
           transform: translateY(103%);
-  -webkit-transition: all, 0.7s ease-out;
-  transition: all, 0.7s ease-out;
+  -webkit-transition: all, 0.5s ease-out;
+  transition: all, 0.5s ease-out;
 
   .row {
     z-index: 2;
@@ -727,6 +751,7 @@ input[type=number]::-webkit-outer-spin-button {
             transform: translateY(0);
 
     .footer-btn_show {
+      top: -60px;
       opacity: 0;
     }
   }
@@ -736,6 +761,8 @@ input[type=number]::-webkit-outer-spin-button {
             transform: translateY(0);
 
     .footer-btn_show {
+      top: -60px;
+
       .footer-btn_open {
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
@@ -750,15 +777,15 @@ input[type=number]::-webkit-outer-spin-button {
 
   &-btn_show {
     position: absolute;
-    top: -60px;
+    top: -30px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     overflow-x: hidden;
     cursor: pointer;
     opacity: 1;
-    -webkit-transition: all, .3s;
-    transition: all, .3s;
+    -webkit-transition: all, .5s;
+    transition: all, .5s;
 
     img {
       width: 250px;
@@ -771,8 +798,12 @@ input[type=number]::-webkit-outer-spin-button {
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       font-size: 24px;
-      -webkit-transition: all, .3s;
-      transition: all, .3s;
+      -webkit-transition: all, .5s;
+      transition: all, .5s;
+    }
+
+    &:hover {
+      top: -60px;
     }
 
     .footer-btn_open {
@@ -853,6 +884,35 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 22px;
       }
     }
+
+    &.show_scroll {
+      .footer-btn_show {
+        top: -50px;
+      }
+    }
+
+    &.show_click {
+      .footer-btn_show {
+        top: -50px;
+      }
+    }
+
+    &-btn_show {
+      top: -25px;
+
+      img {
+        width: 200px;
+      }
+
+      span {
+        top: 25% !important;
+        font-size: 22px;
+      }
+
+      &:hover {
+        top: -50px;
+      }
+    }
   }
 }
 
@@ -883,6 +943,35 @@ input[type=number]::-webkit-outer-spin-button {
     &-adress {
       span {
         font-size: 18px;
+      }
+    }
+
+    &.show_scroll {
+      .footer-btn_show {
+        top: -40px;
+      }
+    }
+
+    &.show_click {
+      .footer-btn_show {
+        top: -40px;
+      }
+    }
+
+    &-btn_show {
+      top: -25px;
+
+      img {
+        width: 175px;
+      }
+
+      span {
+        top: 20% !important;
+        font-size: 20px;
+      }
+
+      &:hover {
+        top: -40px;
       }
     }
   }

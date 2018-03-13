@@ -57,10 +57,8 @@ $(document).ready(function() {
   $(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() + 3 > $(document).height()) {
       $('.footer').addClass('show_scroll');
-      //$('.trasted').addClass('footer-margin');
     } else {
       $('.footer').removeClass('show_scroll');
-      //$('.trasted').removeClass('footer-margin');
     }
   });
 
