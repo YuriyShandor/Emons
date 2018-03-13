@@ -37,19 +37,35 @@ $(document).ready(function() {
     ]
   });
 
-  // Show Footer
-  var footerKeyCode = undefined;
-  $(window).keypress(function (event) {
-    footerKeyCode = event.keyCode;
-    console.log(footerKeyCode);
-  })
-
-  $(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() + 3 > $(document).height() || footerKeyCode == 32) {
-      $('.footer').addClass('show');
+  // Btn to top
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('#btnToTop').addClass('show');
     } else {
-      $('.footer').removeClass('show');
+      $('#btnToTop').removeClass('show');
     }
+  });
+
+  $('#btnToTop').click(function(){
+    $('html, body').animate({
+      scrollTop : 0
+    },750);
+    return false;
+  });
+
+  // Show Footer
+  $(window).scroll(function () {
+    if ($(window).scrollTop() + $(window).height() + 3 > $(document).height()) {
+      $('.footer').addClass('show_scroll');
+      //$('.trasted').addClass('footer-margin');
+    } else {
+      $('.footer').removeClass('show_scroll');
+      //$('.trasted').removeClass('footer-margin');
+    }
+  });
+
+  $('.footer-btn_show').on('click', function() {
+    $('.footer').toggleClass('show_click');
   });
 
   // For vacancy modal window
