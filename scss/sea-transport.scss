@@ -115,8 +115,8 @@
     &-photo {
       width: 175px;
       height: 200px;
-      -webkit-box-shadow: 0 0 18px 8px #fffde8 inset;
-              box-shadow: 0 0 18px 8px #fffde8 inset;
+      -webkit-box-shadow: 0 0 18px 12px #fffde8 inset;
+              box-shadow: 0 0 18px 12px #fffde8 inset;
       background: url(../img/404comand__member.jpg) no-repeat center / cover;
     }
 
@@ -138,10 +138,6 @@
         margin-left: 85px;
         color: $red;
       }
-
-      img {
-        //margin-right: 175px;
-      }
     }
   }
 
@@ -157,8 +153,8 @@
 
     &-block {
       background: #f9edd1;
-      -webkit-box-shadow: 0 0 18px 8px #f9edd1 inset;
-              box-shadow: 0 0 18px 8px #f9edd1 inset;
+      -webkit-box-shadow: 0px 0px 30px 22px rgba(249,237,209,1);
+              box-shadow: 0px 0px 30px 22px rgba(249,237,209,1);
       padding-top: 50px;
       padding-bottom: 60px;
       padding-left: 80px;

@@ -153,13 +153,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .header-nav {
   width: 0;
-  height: 100vh;
+  min-height: 100vh;
   background: rgba(255, 224, 148, 0.85);
   position: absolute;
   top: 0;
   left: -40px;
   z-index: 105;
-  padding-top: 150px;
+  padding-top: 120px;
   padding-right: 0px;
   padding-bottom: 25px;
   overflow-x: hidden;
@@ -192,7 +192,7 @@ input[type=number]::-webkit-outer-spin-button {
 .header-nav ul li:before {
   display: block;
   content: '';
-  width: 82%;
+  width: 83%;
   height: 5px;
   position: absolute;
   bottom: 0;
@@ -201,6 +201,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header-nav ul li a {
+  margin: 0;
   min-width: 100%;
   font-size: 24px;
   color: #000;
@@ -270,7 +271,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 24px;
   }
   .header-nav {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 25px;
   }
 }
@@ -317,7 +318,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 24px;
   }
   .header-nav {
-    padding-top: 100px;
+    padding-top: 77px;
     padding-bottom: 25px;
     top: -27px;
     left: -30px;
@@ -332,7 +333,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 22px;
   }
   .header-nav ul li:before {
-    width: 50%;
+    width: 87%;
+    left: -70px;
   }
   .header-nav_show {
     width: 375px;
@@ -371,12 +373,15 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 18px;
   }
   .header-nav {
-    padding-top: 80px;
+    padding-top: 84px;
     top: -15px;
     left: -25px;
   }
   .header-nav ul li {
     padding: 5px 0;
+  }
+  .header-nav ul li:before {
+    width: 86%;
   }
   .header-nav ul li a {
     font-size: 20px;
@@ -430,19 +435,22 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 10px;
   }
   .header-nav {
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 25px;
     left: 0;
   }
   .header-nav ul li {
     padding: 5px 0;
   }
+  .header-nav ul li:before {
+    width: 83%;
+  }
   .header-nav ul li a {
     font-size: 20px;
   }
   .header-nav_show {
-    width: 340px;
-    padding-right: 5px;
+    width: 95vw;
+    padding-right: 20px;
     padding-left: 25px;
   }
 }
@@ -826,8 +834,8 @@ input[type=number]::-webkit-outer-spin-button {
 .error-content .error-comand .error-comand__member .member-photo {
   width: 100%;
   height: 320px;
-  -webkit-box-shadow: 0 0 28px 18px #fffde8 inset;
-  box-shadow: 0 0 28px 18px #fffde8 inset;
+  -webkit-box-shadow: inset 0px 0px 30px 20px #fffde8;
+  box-shadow: inset 0px 0px 30px 20px #fffde8;
 }
 
 .error-content .error-comand .error-comand__member .member-photo_01 {
