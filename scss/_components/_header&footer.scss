@@ -677,13 +677,14 @@ input[type=number]::-webkit-outer-spin-button {
   position: fixed;
   left: 0;
   bottom: 0;
-  -webkit-transform: translateY(103%);
-          transform: translateY(103%);
+  z-index: 50;
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
   -webkit-transition: all, 0.5s ease-out;
   transition: all, 0.5s ease-out;
 
   .row {
-    z-index: 2;
+    z-index: 20;
     display: -ms-flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -746,12 +747,17 @@ input[type=number]::-webkit-outer-spin-button {
     z-index: 10;
   }
 
+  &:hover {
+    -webkit-transform: translateY(103%);
+            transform: translateY(103%);
+  }
+
   &.show_scroll {
     -webkit-transform: translateY(0);
             transform: translateY(0);
 
     .footer-btn_show {
-      top: -60px;
+      top: -51px;
       opacity: 0;
     }
   }
@@ -761,7 +767,7 @@ input[type=number]::-webkit-outer-spin-button {
             transform: translateY(0);
 
     .footer-btn_show {
-      top: -60px;
+      top: -51px;
 
       .footer-btn_open {
         -webkit-transform: translateX(-50%);
@@ -777,13 +783,14 @@ input[type=number]::-webkit-outer-spin-button {
 
   &-btn_show {
     position: absolute;
-    top: -30px;
+    top: -51px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     overflow-x: hidden;
     cursor: pointer;
     opacity: 1;
+    z-index: 1;
     -webkit-transition: all, .5s;
     transition: all, .5s;
 
@@ -793,17 +800,13 @@ input[type=number]::-webkit-outer-spin-button {
 
     span {
       position: absolute;
-      top: 30% !important;
+      top: 25% !important;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       font-size: 24px;
       -webkit-transition: all, .5s;
       transition: all, .5s;
-    }
-
-    &:hover {
-      top: -60px;
     }
 
     .footer-btn_open {
