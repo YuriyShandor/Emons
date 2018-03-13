@@ -178,7 +178,7 @@ input[type=number]::-webkit-outer-spin-button {
       list-style: none;
 
       li {
-        min-width: 100%;
+        width: 400px;
         padding: 10px 0;
         position: relative;
         display: -ms-flex;
@@ -202,12 +202,13 @@ input[type=number]::-webkit-outer-spin-button {
 
         a {
           margin: 0;
-          min-width: 100%;
+          width: 400px;
           font-size: 24px;
           color: #000;
           text-decoration: none;
-          -webkit-transition: all, .3s;
-          transition: all, .3s;
+          opacity: 0;
+          -webkit-transition: all, 1s ease-in;
+          transition: all, 1s ease-in;
 
           &:hover {
             color: $red;
@@ -234,10 +235,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header-nav_show {
-  width: 400px;
+  width: 500px;
   padding-right: 20px;
   padding-left: 40px;
   overflow-x: visible;
+
+  ul li a {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width : 1199px) {

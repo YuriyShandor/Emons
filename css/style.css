@@ -156,10 +156,10 @@ input[type=number]::-webkit-outer-spin-button {
   min-height: 100vh;
   background: rgba(255, 224, 148, 0.85);
   position: absolute;
-  top: 0;
+  top: 86px;
   left: -40px;
   z-index: 105;
-  padding-top: 120px;
+  padding-top: 35px;
   padding-right: 0px;
   padding-bottom: 25px;
   overflow-x: hidden;
@@ -177,7 +177,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header-nav ul li {
-  min-width: 100%;
+  width: 400px;
   padding: 10px 0;
   position: relative;
   display: -ms-flex;
@@ -202,12 +202,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .header-nav ul li a {
   margin: 0;
-  min-width: 100%;
+  width: 400px;
   font-size: 24px;
   color: #000;
   text-decoration: none;
-  -webkit-transition: all, .3s;
-  transition: all, .3s;
+  opacity: 0;
+  -webkit-transition: all, 1s ease-in;
+  transition: all, 1s ease-in;
 }
 
 .header-nav ul li a:hover {
@@ -230,10 +231,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header-nav_show {
-  width: 400px;
+  width: 500px;
   padding-right: 20px;
   padding-left: 40px;
   overflow-x: visible;
+}
+
+.header-nav_show ul li a {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -271,8 +276,9 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 24px;
   }
   .header-nav {
-    padding-top: 100px;
+    padding-top: 18px;
     padding-bottom: 25px;
+    top: 80px;
   }
 }
 
@@ -318,9 +324,9 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 24px;
   }
   .header-nav {
-    padding-top: 77px;
+    padding-top: 15px;
     padding-bottom: 25px;
-    top: -27px;
+    top: 74px;
     left: -30px;
   }
   .header-nav ul {
@@ -373,8 +379,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 18px;
   }
   .header-nav {
-    padding-top: 84px;
-    top: -15px;
+    padding-top: 9px;
+    top: 60px;
     left: -25px;
   }
   .header-nav ul li {
@@ -435,9 +441,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 10px;
   }
   .header-nav {
-    padding-top: 110px;
+    padding-top: 5px;
     padding-bottom: 25px;
     left: 0;
+    top: 61px;
   }
   .header-nav ul li {
     padding: 5px 0;
@@ -469,6 +476,21 @@ input[type=number]::-webkit-outer-spin-button {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 10px;
+  }
+  .header-nav {
+    padding-top: 7px;
+    padding-bottom: 25px;
+    left: 0;
+    top: 87px;
+  }
+  .header-nav ul li {
+    padding: 5px 0;
+  }
+  .header-nav ul li:before {
+    width: 83%;
+  }
+  .header-nav ul li a {
+    font-size: 20px;
   }
 }
 
