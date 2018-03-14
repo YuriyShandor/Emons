@@ -83,13 +83,8 @@
     }
 
     &.show {
-      -webkit-transform: translateX(65px);
-              transform: translateX(65px);
-    }
-
-    &:hover {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
     }
   }
 }
@@ -113,13 +108,8 @@
     }
 
     &.show {
-      -webkit-transform: translateX(55px);
-              transform: translateX(55px);
-    }
-
-    &:hover {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
     }
   }
 }
@@ -127,7 +117,7 @@
 @media only screen and (max-width : 767px) {
   .auxiliary-menu {
     top: 85px;
-    right: 1px;
+    right: 3px;
 
     ul {
       li {
@@ -144,19 +134,17 @@
     }
 
     &.show {
-      -webkit-transform: translateX(50px);
-              transform: translateX(50px);
-    }
-
-    &:hover {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
     }
   }
 }
 
-@media only screen and (max-width : 576px) {
-
+@media only screen and (max-width : 430px) {
+  .auxiliary-menu {
+    top: 105px;
+    right: 3px;
+  }
 }
 
 .geography {

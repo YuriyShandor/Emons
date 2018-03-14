@@ -604,22 +604,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .btn-to-top img {
-  width: 75px;
+  width: 55px;
 }
 
 .btn-to-top.show {
-  right: 30px;
+  right: 40px;
 }
 
 @media only screen and (max-width: 1199px) {
   .btn-to-top {
     bottom: 10px;
   }
-  .btn-to-top img {
-    width: 70px;
-  }
   .btn-to-top.show {
-    right: 27px;
+    right: 37px;
   }
 }
 
@@ -627,11 +624,8 @@ input[type=number]::-webkit-outer-spin-button {
   .btn-to-top {
     bottom: 10px;
   }
-  .btn-to-top img {
-    width: 50px;
-  }
   .btn-to-top.show {
-    right: 35px;
+    right: 28px;
   }
 }
 
@@ -639,11 +633,8 @@ input[type=number]::-webkit-outer-spin-button {
   .btn-to-top {
     bottom: 10px;
   }
-  .btn-to-top img {
-    width: 45px;
-  }
   .btn-to-top.show {
-    right: 25px;
+    right: 30px;
   }
 }
 
@@ -651,11 +642,8 @@ input[type=number]::-webkit-outer-spin-button {
   .btn-to-top {
     bottom: 10px;
   }
-  .btn-to-top img {
-    width: 40px;
-  }
   .btn-to-top.show {
-    right: 30px;
+    right: 25px;
   }
 }
 
@@ -1048,12 +1036,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 22px;
   }
   .auxiliary-menu.show {
-    -webkit-transform: translateX(65px);
-    transform: translateX(65px);
-  }
-  .auxiliary-menu:hover {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -1068,19 +1052,15 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 20px;
   }
   .auxiliary-menu.show {
-    -webkit-transform: translateX(55px);
-    transform: translateX(55px);
-  }
-  .auxiliary-menu:hover {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 @media only screen and (max-width: 767px) {
   .auxiliary-menu {
     top: 85px;
-    right: 1px;
+    right: 3px;
   }
   .auxiliary-menu ul li a img {
     width: 20px;
@@ -1089,12 +1069,15 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 18px;
   }
   .auxiliary-menu.show {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
-  .auxiliary-menu:hover {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+}
+
+@media only screen and (max-width: 430px) {
+  .auxiliary-menu {
+    top: 105px;
+    right: 3px;
   }
 }
 
