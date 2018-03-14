@@ -370,13 +370,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 767px) {
   body {
-    padding-top: 0px;
+    padding-top: 77px;
   }
   .section-heading h2 {
     font-size: 36px;
   }
   .header {
-    position: relative;
     padding-top: 5px;
     padding-bottom: 10px;
   }
@@ -401,18 +400,18 @@ input[type=number]::-webkit-outer-spin-button {
   .header-nav {
     -webkit-transform: translateX(-500px);
     transform: translateX(-500px);
-    padding-top: 9px;
+    padding-top: 0px;
     padding-left: 25px;
     padding-right: 15px;
     top: 60px;
     left: -25px;
   }
   .header-nav ul li {
-    padding: 5px 0;
+    padding: 3px 0;
   }
   .header-nav ul li a {
     width: 294px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .header-nav_show {
     -webkit-transform: translateX(0);
@@ -426,7 +425,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 576px) {
   body {
-    padding-top: 0px;
+    padding-top: 63px;
   }
   .section-heading h2 {
     font-size: 32px;
@@ -466,16 +465,16 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 10px;
   }
   .header-nav {
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 25px;
     left: 0;
     top: 61px;
   }
   .header-nav ul li {
-    padding: 5px 0;
+    padding: 3px 0;
   }
   .header-nav ul li a {
-    font-size: 20px;
+    font-size: 18px;
   }
   .header-nav_show {
     -webkit-transform: translateX(0);
@@ -489,7 +488,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 430px) {
   body {
-    padding-top: 0px;
+    padding-top: 88px;
   }
   .header__number-mail {
     width: 100%;

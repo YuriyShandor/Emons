@@ -370,13 +370,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 767px) {
   body {
-    padding-top: 0px;
+    padding-top: 77px;
   }
   .section-heading h2 {
     font-size: 36px;
   }
   .header {
-    position: relative;
     padding-top: 5px;
     padding-bottom: 10px;
   }
@@ -401,18 +400,18 @@ input[type=number]::-webkit-outer-spin-button {
   .header-nav {
     -webkit-transform: translateX(-500px);
     transform: translateX(-500px);
-    padding-top: 9px;
+    padding-top: 0px;
     padding-left: 25px;
     padding-right: 15px;
     top: 60px;
     left: -25px;
   }
   .header-nav ul li {
-    padding: 5px 0;
+    padding: 3px 0;
   }
   .header-nav ul li a {
     width: 294px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .header-nav_show {
     -webkit-transform: translateX(0);
@@ -426,7 +425,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 576px) {
   body {
-    padding-top: 0px;
+    padding-top: 63px;
   }
   .section-heading h2 {
     font-size: 32px;
@@ -466,16 +465,16 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 10px;
   }
   .header-nav {
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 25px;
     left: 0;
     top: 61px;
   }
   .header-nav ul li {
-    padding: 5px 0;
+    padding: 3px 0;
   }
   .header-nav ul li a {
-    font-size: 20px;
+    font-size: 18px;
   }
   .header-nav_show {
     -webkit-transform: translateX(0);
@@ -489,7 +488,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 430px) {
   body {
-    padding-top: 0px;
+    padding-top: 88px;
   }
   .header__number-mail {
     width: 100%;
@@ -1071,15 +1070,15 @@ body {
 
 @media only screen and (max-width: 767px) {
   .auxiliary-menu {
-    z-index: 750;
+    z-index: 2050;
     top: 0px;
     right: 0px;
     -webkit-transform: translateX(200px);
     transform: translateX(200px);
   }
   .auxiliary-menu nav {
-    padding-top: 85px;
-    background: rgba(255, 224, 148, 0.85);
+    padding-top: 35px;
+    background: rgba(255, 224, 148, 0.97);
     -webkit-box-shadow: 0px 0px 25px 10px #f9edd1;
     box-shadow: 0px 0px 25px 10px #f9edd1;
     height: 100vh;
@@ -1105,7 +1104,7 @@ body {
     margin: 3px 0;
   }
   .auxiliary-menu ul li a img {
-    width: 40px;
+    width: 55px;
   }
   .auxiliary-menu ul li a span {
     font-size: 18px;
@@ -1128,7 +1127,7 @@ body {
     bottom: 10px;
     display: block;
     width: 55px;
-    z-index: 2000;
+    z-index: 2500;
     cursor: pointer;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
@@ -1136,8 +1135,7 @@ body {
     transition: all, .5s;
   }
   .show-ax-menu__btn.active {
-    bottom: 3px;
-    width: 45px;
+    bottom: 5px;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
@@ -1148,7 +1146,7 @@ body {
     top: 0px;
   }
   .auxiliary-menu nav {
-    padding-top: 65px;
+    padding-top: 5px;
   }
 }
 
@@ -1158,7 +1156,7 @@ body {
     right: 0px;
   }
   .auxiliary-menu nav {
-    padding-top: 95px;
+    padding-top: 5px;
   }
 }
 
