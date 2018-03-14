@@ -12,6 +12,7 @@ $(document).ready(function() {
   });
 
   $('.show-ax-menu__btn').on('click', function() {
+    $(this).toggleClass('active');
     $('.auxiliary-menu').toggleClass('show_mobile');
   });
 
