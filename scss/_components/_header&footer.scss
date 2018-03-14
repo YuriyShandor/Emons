@@ -696,6 +696,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 // Btn to top
 .btn-to-top {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   position: fixed;
   bottom: 20px;
   right: -100px;
@@ -1093,7 +1097,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     &-number {
-      margin-top: 10px;
+      margin-top: 0px;
 
       h2 {
         font-size: 26px;
@@ -1106,10 +1110,12 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     &-socials {
-      margin: 10px 15px;
+      margin: 5px 15px;
     }
 
     &-adress {
+      text-align: center;
+
       span {
         font-size: 18px;
       }
