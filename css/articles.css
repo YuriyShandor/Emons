@@ -1867,6 +1867,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .articles__item-discr .article__heading-block .article-ttl {
     font-size: 22px;
+    width: 65%;
   }
   .articles__item-discr .article__heading-block span {
     font-size: 18px;

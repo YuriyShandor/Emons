@@ -512,13 +512,13 @@
     padding-bottom: 50px;
 
     &__ttl {
-      margin: 15px 0;
-      padding: 15px;
+      margin: 20px 0;
+      padding: 5px;
 
       .blog-m__date {
         height: 30px;
-        font-size: 26px;
-        margin-bottom: 15px;
+        font-size: 24px;
+        margin-bottom: 7px;
 
         &:after {
           display: none;
@@ -527,13 +527,14 @@
 
       h3 {
         margin-left: 0;
-        font-size: 26px;
+        width: 85%;
+        font-size: 24px;
       }
 
       .blog-m__socials {
         img {
-          -webkit-transform: scale(0.3);
-                  transform: scale(0.3);
+          -webkit-transform: scale(0.4);
+                  transform: scale(0.4);
         }
       }
     }
