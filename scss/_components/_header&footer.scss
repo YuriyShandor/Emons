@@ -735,7 +735,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width : 767px) {
   .btn-to-top {
-    bottom: 20px;
+    bottom: 5px;
 
     &.show {
       left: 5px;
@@ -745,7 +745,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width : 576px) {
   .btn-to-top {
-    bottom: 20px;
+    bottom: 5px;
 
     &.show {
       left: 5px;
