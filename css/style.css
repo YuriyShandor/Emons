@@ -152,18 +152,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header-nav {
-  width: 0;
+  width: 500px;
   min-height: 100vh;
   background: rgba(255, 224, 148, 0.85);
   position: absolute;
   top: 86px;
   left: -40px;
-  z-index: 105;
   padding-top: 35px;
   padding-right: 0px;
   padding-bottom: 25px;
-  -webkit-transition: all, 1s ease-in;
-  transition: all, 1s ease-in;
+  -webkit-transform: translateX(-1500px);
+  transform: translateX(-1500px);
+  -webkit-transition: all, .7s;
+  transition: all, .7s;
 }
 
 .header-nav ul {
@@ -196,8 +197,8 @@ input[type=number]::-webkit-outer-spin-button {
   bottom: 0;
   left: 0px;
   background: url(../img/menu-item__devider.png);
-  -webkit-transition: all, 1s ease-in;
-  transition: all, 1s ease-in;
+  -webkit-transition: all, .5s .7s;
+  transition: all, .5s .7s;
 }
 
 .header-nav ul li a {
@@ -207,8 +208,8 @@ input[type=number]::-webkit-outer-spin-button {
   color: #000;
   text-decoration: none;
   opacity: 0;
-  -webkit-transition: all, 1s ease-in;
-  transition: all, 1s ease-in;
+  -webkit-transition: all, .5s .7s;
+  transition: all, .5s .7s;
 }
 
 .header-nav ul li a:hover {
@@ -229,15 +230,15 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-filter: grayscale(200%);
   filter: grayscale(200%);
   opacity: 0;
-  -webkit-transition: all, 1s ease-in;
-  transition: all, 1s ease-in;
+  -webkit-transition: all, .5s .7s;
+  transition: all, .5s .7s;
 }
 
 .header-nav_show {
-  width: 500px;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
   padding-right: 20px;
   padding-left: 40px;
-  overflow-x: visible;
 }
 
 .header-nav_show ul li:before {
@@ -730,11 +731,13 @@ input[type=number]::-webkit-outer-spin-button {
 .footer.show_click .footer-btn_show .footer-btn_open {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  display: block;
 }
 
 .footer.show_click .footer-btn_show .footer-btn_close {
   -webkit-transform: translateX(-300px);
   transform: translateX(-300px);
+  display: none;
 }
 
 .footer-btn_show {
@@ -769,11 +772,13 @@ input[type=number]::-webkit-outer-spin-button {
 .footer-btn_show .footer-btn_open {
   -webkit-transform: translateX(300px);
   transform: translateX(300px);
+  display: none;
 }
 
 .footer-btn_show .footer-btn_close {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  display: block;
 }
 
 @media only screen and (max-width: 1199px) {
