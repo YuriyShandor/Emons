@@ -1068,11 +1068,10 @@ body {
 @media only screen and (max-width: 767px) {
   .auxiliary-menu {
     position: absolute;
-    top: 700px;
+    top: 100px;
     right: 3px;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    display: none;
   }
   .auxiliary-menu ul li {
     margin: 10px 0;
@@ -1083,14 +1082,17 @@ body {
   .auxiliary-menu ul li a span {
     font-size: 18px;
   }
-  .auxiliary-menu.show {
-    display: block;
+}
+
+@media only screen and (max-width: 576px) {
+  .auxiliary-menu {
+    top: 70px;
   }
 }
 
 @media only screen and (max-width: 430px) {
   .auxiliary-menu {
-    top: 605px;
+    top: 100px;
     right: 3px;
   }
 }
