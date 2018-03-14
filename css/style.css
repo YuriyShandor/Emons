@@ -984,6 +984,10 @@ body {
   transition: all, .5s;
 }
 
+.auxiliary-menu .show-ax-menu__btn {
+  display: none;
+}
+
 .auxiliary-menu ul {
   margin: 0;
   padding: 0;
@@ -1067,13 +1071,48 @@ body {
 
 @media only screen and (max-width: 767px) {
   .auxiliary-menu {
-    position: absolute;
-    top: 100px;
-    right: 3px;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    top: 31%;
+    right: 10px;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+  .auxiliary-menu nav {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .auxiliary-menu .show-ax-menu__btn {
+    display: block;
+    width: 55px;
+    z-index: 1000;
+    cursor: pointer;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: all, .5s;
+    transition: all, .5s;
+  }
+  .auxiliary-menu ul {
+    z-index: 500;
+    width: 190px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: rgba(255, 224, 148, 0.85);
+    -webkit-box-shadow: 0px 0px 25px 10px #f9edd1;
+    box-shadow: 0px 0px 25px 10px #f9edd1;
   }
   .auxiliary-menu ul li {
+    width: 90px;
     margin: 10px 0;
   }
   .auxiliary-menu ul li a img {
@@ -1081,6 +1120,22 @@ body {
   }
   .auxiliary-menu ul li a span {
     font-size: 18px;
+  }
+  .auxiliary-menu.show_mobile {
+    -webkit-transform: translateX(0px) !important;
+    transform: translateX(0px) !important;
+  }
+  .auxiliary-menu.show_mobile .show-ax-menu__btn {
+    -webkit-transform: rotate(90deg) !important;
+    transform: rotate(90deg) !important;
+  }
+  .auxiliary-menu.show {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+  .auxiliary-menu:hover {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
   }
 }
 
