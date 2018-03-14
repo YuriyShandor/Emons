@@ -704,7 +704,7 @@ input[type=number]::-webkit-outer-spin-button {
   transition: all, .5s;
 
   img {
-    width: 55px;
+    width: 75px;
   }
 
   &.show {
@@ -717,11 +717,11 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
 
     img {
-      width: 50px;
+      width: 70px;
     }
 
     &.show {
-      right: 30px;
+      right: 27px;
     }
   }
 }
@@ -731,11 +731,11 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
 
     img {
-      width: 40px;
+      width: 50px;
     }
 
     &.show {
-      right: 30px;
+      right: 35px;
     }
   }
 }
@@ -745,11 +745,11 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
 
     img {
-      width: 30px;
+      width: 45px;
     }
 
     &.show {
-      right: 20px;
+      right: 25px;
     }
   }
 }
@@ -759,11 +759,11 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
 
     img {
-      width: 30px;
+      width: 40px;
     }
 
     &.show {
-      right: 10px;
+      right: 30px;
     }
   }
 }
@@ -858,7 +858,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .footer-btn_show {
       top: -51px;
-      opacity: 0;
+      display: none;
     }
   }
 

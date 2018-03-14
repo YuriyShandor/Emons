@@ -603,7 +603,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .btn-to-top img {
-  width: 55px;
+  width: 75px;
 }
 
 .btn-to-top.show {
@@ -615,10 +615,10 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
   }
   .btn-to-top img {
-    width: 50px;
+    width: 70px;
   }
   .btn-to-top.show {
-    right: 30px;
+    right: 27px;
   }
 }
 
@@ -627,10 +627,10 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
   }
   .btn-to-top img {
-    width: 40px;
+    width: 50px;
   }
   .btn-to-top.show {
-    right: 30px;
+    right: 35px;
   }
 }
 
@@ -639,10 +639,10 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
   }
   .btn-to-top img {
-    width: 30px;
+    width: 45px;
   }
   .btn-to-top.show {
-    right: 20px;
+    right: 25px;
   }
 }
 
@@ -651,10 +651,10 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
   }
   .btn-to-top img {
-    width: 30px;
+    width: 40px;
   }
   .btn-to-top.show {
-    right: 10px;
+    right: 30px;
   }
 }
 
@@ -749,7 +749,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .footer.show_scroll .footer-btn_show {
   top: -51px;
-  opacity: 0;
+  display: none;
 }
 
 .footer.show_click {
