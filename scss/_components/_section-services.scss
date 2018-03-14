@@ -19,6 +19,17 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
 
+    &-item-cover {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 35px 0;
+    }
+
     &-item {
       display: -ms-flex;
       display: -webkit-box;
@@ -34,31 +45,18 @@
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
+      text-decoration: none;
       height: 330px;
-      margin: 35px 0;
       -webkit-transition: all, .3s;
       transition: all, .3s;
 
-      &-img {
+      img {
         width: 95%;
-        display: -ms-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-
-        img {
-          max-width: 100%;
-          height: auto;
-        }
+        height: auto;
       }
 
-      a {
+      p {
+        margin: 0;
         margin-top: 15px;
         display: -ms-flex;
         display: -webkit-box;
@@ -76,13 +74,10 @@
         font-size: 30px;
         color: #000;
         line-height: 1;
-
-        span {
-          color: $red;
-        }
       }
 
       &:hover {
+        text-decoration: none;
         -webkit-transform: scale(1.1);
                 transform: scale(1.1);
       }
@@ -145,11 +140,14 @@
       margin-top: 40px;
       margin-bottom: 110px;
 
+      &-item-cover {
+        margin: 20px 0;
+      }
+
       &-item {
         height: 300px;
-        margin: 20px 0;
 
-        a {
+        p {
           margin-top: 10px;
           font-size: 26px;
         }
@@ -197,7 +195,7 @@
       &-item {
         height: 300px;
 
-        a {
+        p {
           margin-top: 10px;
           font-size: 24px;
         }
@@ -245,11 +243,14 @@
           -ms-flex-pack: center;
               justify-content: center;
 
+      &-item-cover {
+        margin: 10px 0;
+      }
+
       &-item {
         height: 250px;
-        margin: 5px 0;
 
-        a {
+        p {
           margin-top: 10px;
           font-size: 22px;
         }
@@ -303,7 +304,7 @@
         width: 290px;
         height: 260px;
 
-        a {
+        p {
           margin-top: 10px;
           font-size: 22px;
         }

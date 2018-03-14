@@ -1104,6 +1104,17 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: space-between;
 }
 
+.services__block-item-cover {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 35px 0;
+}
+
 .services__block-item {
   display: -ms-flex;
   display: -webkit-box;
@@ -1119,32 +1130,19 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  text-decoration: none;
   height: 330px;
-  margin: 35px 0;
   -webkit-transition: all, .3s;
   transition: all, .3s;
 }
 
-.services__block-item-img {
+.services__block-item img {
   width: 95%;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.services__block-item-img img {
-  max-width: 100%;
   height: auto;
 }
 
-.services__block-item a {
+.services__block-item p {
+  margin: 0;
   margin-top: 15px;
   display: -ms-flex;
   display: -webkit-box;
@@ -1164,11 +1162,8 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 1;
 }
 
-.services__block-item a span {
-  color: #cc0000;
-}
-
 .services__block-item:hover {
+  text-decoration: none;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -1225,11 +1220,13 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 40px;
     margin-bottom: 110px;
   }
-  .services__block-item {
-    height: 300px;
+  .services__block-item-cover {
     margin: 20px 0;
   }
-  .services__block-item a {
+  .services__block-item {
+    height: 300px;
+  }
+  .services__block-item p {
     margin-top: 10px;
     font-size: 26px;
   }
@@ -1267,7 +1264,7 @@ input[type=number]::-webkit-outer-spin-button {
   .services__block-item {
     height: 300px;
   }
-  .services__block-item a {
+  .services__block-item p {
     margin-top: 10px;
     font-size: 24px;
   }
@@ -1305,11 +1302,13 @@ input[type=number]::-webkit-outer-spin-button {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .services__block-item-cover {
+    margin: 10px 0;
+  }
   .services__block-item {
     height: 250px;
-    margin: 5px 0;
   }
-  .services__block-item a {
+  .services__block-item p {
     margin-top: 10px;
     font-size: 22px;
   }
@@ -1352,7 +1351,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 290px;
     height: 260px;
   }
-  .services__block-item a {
+  .services__block-item p {
     margin-top: 10px;
     font-size: 22px;
   }
