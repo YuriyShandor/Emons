@@ -4,6 +4,22 @@ $(document).ready(function() {
     $('.header-nav').toggleClass('header-nav_show');
   });
 
+  // For Auxiliary Menu
+  $(window).scroll(function(){
+    if ( $(window).width() > 768) {
+      if ($(window).scrollTop() > 100) {
+        $('.auxiliary-menu').addClass('show');
+      } else {
+        $('.auxiliary-menu').removeClass('show');
+      }
+    }
+  });
+
+  $('.show-ax-menu__btn').on('click', function() {
+    $(this).toggleClass('active');
+    $('.auxiliary-menu').toggleClass('show_mobile');
+  });
+
   // Trasted slider
   $(".trasted-slider").slick({
     slidesToShow: 4,
