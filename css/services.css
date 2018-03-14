@@ -84,7 +84,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .header .row {
@@ -370,12 +370,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 767px) {
   body {
-    padding-top: 75px;
+    padding-top: 0px;
   }
   .section-heading h2 {
     font-size: 36px;
   }
   .header {
+    position: relative;
     padding-top: 5px;
     padding-bottom: 10px;
   }
@@ -425,7 +426,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 576px) {
   body {
-    padding-top: 60px;
+    padding-top: 0px;
   }
   .section-heading h2 {
     font-size: 32px;
@@ -488,7 +489,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 430px) {
   body {
-    padding-top: 88px;
+    padding-top: 0px;
   }
   .header__number-mail {
     width: 100%;
@@ -604,22 +605,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .btn-to-top img {
-  width: 75px;
+  width: 55px;
 }
 
 .btn-to-top.show {
-  right: 30px;
+  left: 20px;
 }
 
 @media only screen and (max-width: 1199px) {
   .btn-to-top {
     bottom: 10px;
   }
-  .btn-to-top img {
-    width: 70px;
-  }
   .btn-to-top.show {
-    right: 27px;
+    left: 20px;
   }
 }
 
@@ -627,11 +625,8 @@ input[type=number]::-webkit-outer-spin-button {
   .btn-to-top {
     bottom: 10px;
   }
-  .btn-to-top img {
-    width: 50px;
-  }
   .btn-to-top.show {
-    right: 35px;
+    left: 10px;
   }
 }
 
@@ -639,11 +634,8 @@ input[type=number]::-webkit-outer-spin-button {
   .btn-to-top {
     bottom: 10px;
   }
-  .btn-to-top img {
-    width: 45px;
-  }
   .btn-to-top.show {
-    right: 25px;
+    left: 5px;
   }
 }
 
@@ -651,11 +643,8 @@ input[type=number]::-webkit-outer-spin-button {
   .btn-to-top {
     bottom: 10px;
   }
-  .btn-to-top img {
-    width: 40px;
-  }
   .btn-to-top.show {
-    right: 30px;
+    left: 5px;
   }
 }
 

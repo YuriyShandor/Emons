@@ -84,7 +84,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .header .row {
@@ -370,12 +370,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 767px) {
   body {
-    padding-top: 75px;
+    padding-top: 0px;
   }
   .section-heading h2 {
     font-size: 36px;
   }
   .header {
+    position: relative;
     padding-top: 5px;
     padding-bottom: 10px;
   }
@@ -425,7 +426,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 576px) {
   body {
-    padding-top: 60px;
+    padding-top: 0px;
   }
   .section-heading h2 {
     font-size: 32px;
@@ -488,7 +489,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 430px) {
   body {
-    padding-top: 88px;
+    padding-top: 0px;
   }
   .header__number-mail {
     width: 100%;
@@ -608,7 +609,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .btn-to-top.show {
-  right: 40px;
+  left: 20px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -616,7 +617,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
   }
   .btn-to-top.show {
-    right: 37px;
+    left: 20px;
   }
 }
 
@@ -625,7 +626,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
   }
   .btn-to-top.show {
-    right: 28px;
+    left: 10px;
   }
 }
 
@@ -634,7 +635,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
   }
   .btn-to-top.show {
-    right: 30px;
+    left: 5px;
   }
 }
 
@@ -643,7 +644,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 10px;
   }
   .btn-to-top.show {
-    right: 25px;
+    left: 5px;
   }
 }
 
@@ -968,6 +969,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 .auxiliary-menu {
   position: fixed;
   top: 100px;
@@ -1045,8 +1050,11 @@ input[type=number]::-webkit-outer-spin-button {
   .auxiliary-menu {
     top: 115px;
   }
+  .auxiliary-menu ul li {
+    margin: 5px 0;
+  }
   .auxiliary-menu ul li a img {
-    width: 30px;
+    width: 40px;
   }
   .auxiliary-menu ul li a span {
     font-size: 20px;
@@ -1059,24 +1067,30 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 767px) {
   .auxiliary-menu {
-    top: 85px;
+    position: absolute;
+    top: 700px;
     right: 3px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    display: none;
+  }
+  .auxiliary-menu ul li {
+    margin: 10px 0;
   }
   .auxiliary-menu ul li a img {
-    width: 20px;
+    width: 40px;
   }
   .auxiliary-menu ul li a span {
     font-size: 18px;
   }
   .auxiliary-menu.show {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
+    display: block;
   }
 }
 
 @media only screen and (max-width: 430px) {
   .auxiliary-menu {
-    top: 105px;
+    top: 605px;
     right: 3px;
   }
 }
