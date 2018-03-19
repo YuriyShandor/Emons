@@ -1209,8 +1209,8 @@ body {
 .geography .emons-map__airplane {
   position: absolute;
   opacity: 0;
-  -webkit-animation-duration: calc(15 * (1920 / 100vw));
-  animation-duration: calc(15 * (1920 / 100vw));
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
 }
 
 .geography .emons-map__airplane_01 {

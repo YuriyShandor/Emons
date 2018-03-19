@@ -16,8 +16,8 @@ body {
     &__airplane {
       position: absolute;
       opacity: 0;
-      -webkit-animation-duration: calc(15 * (1920 / 100vw));
-              animation-duration: calc(15 * (1920 / 100vw));
+      -webkit-animation-duration: 15s;
+              animation-duration: 15s;
     }
 
     &__airplane_01 {
@@ -48,7 +48,6 @@ body {
   }
 }
 
-
 @-webkit-keyframes airplane1 {
   0% {
     top: 80%;
@@ -71,7 +70,6 @@ body {
     opacity: 0;
   }
 }
-
 
 @keyframes airplane1 {
   0% {
@@ -96,6 +94,7 @@ body {
   }
 }
 
+
 @-webkit-keyframes airplane4 {
   0% {
     top: 80%;
@@ -118,6 +117,7 @@ body {
     opacity: 0;
   }
 }
+
 
 @keyframes airplane4 {
   0% {
