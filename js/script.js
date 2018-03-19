@@ -6,7 +6,9 @@ $(document).ready(function() {
     }
   });
   $('body').click(function() {
-    $('.header-nav').removeClass('header-nav_show');
+    if ( $(window).width() > 1199) {
+      $('.header-nav').removeClass('header-nav_show');
+    }
   })
   $('.menu-icon').on('click', function() {
     if ( $(window).width() < 1199) {
