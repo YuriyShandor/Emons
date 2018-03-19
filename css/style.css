@@ -1909,6 +1909,7 @@ body {
   position: absolute;
   top: 12px;
   right: 5px;
+  z-index: 550;
 }
 
 .video-presentation__block-cover {
@@ -1917,6 +1918,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  background: url(../img/video-presentation__cover.png) no-repeat center/cover;
 }
 
 .video-presentation.show {
