@@ -9,6 +9,150 @@ body {
 
 .geography {
   padding-bottom: 90px;
+
+  .emons-map {
+    position: relative;
+
+    &__airplane {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-animation-name: airplane;
+              animation-name: airplane;
+      -webkit-animation-duration: 15s;
+              animation-duration: 15s;
+      -webkit-animation-delay: 3s;
+              animation-delay: 3s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+    }
+  }
+}
+
+@-webkit-keyframes airplane {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+
+  10% {
+    top: 70%;
+    left: 60%;
+  }
+
+  20% {
+    top: 50%;
+    left: 80%;
+  }
+
+  30% {
+    top: 30%;
+    left: 60%;
+  }
+
+  40% {
+    top: 40%;
+    left: 50%;
+  }
+
+  50% {
+    top: 50%;
+    left: 35%;
+  }
+
+  60% {
+    top: 35%;
+    left: 25%;
+  }
+
+  70% {
+    top: 45%;
+    left: 30%;
+  }
+
+  80% {
+    top: 60%;
+    left: 40%;
+  }
+
+  80% {
+    top: 70%;
+    left: 50%;
+  }
+
+  90% {
+    top: 60%;
+    left: 45%;
+  }
+
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@keyframes airplane {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+
+  10% {
+    top: 70%;
+    left: 60%;
+  }
+
+  20% {
+    top: 50%;
+    left: 80%;
+  }
+
+  30% {
+    top: 30%;
+    left: 60%;
+  }
+
+  40% {
+    top: 40%;
+    left: 50%;
+  }
+
+  50% {
+    top: 50%;
+    left: 35%;
+  }
+
+  60% {
+    top: 35%;
+    left: 25%;
+  }
+
+  70% {
+    top: 45%;
+    left: 30%;
+  }
+
+  80% {
+    top: 60%;
+    left: 40%;
+  }
+
+  80% {
+    top: 70%;
+    left: 50%;
+  }
+
+  90% {
+    top: 60%;
+    left: 45%;
+  }
+
+  100% {
+    top: 50%;
+    left: 50%;
+  }
 }
 
 @media only screen and (max-width : 991px) {
@@ -347,6 +491,14 @@ body {
       position: absolute;
       top: 12px;
       right: 5px;
+    }
+
+    &-cover {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 
