@@ -1206,14 +1206,15 @@ body {
   position: relative;
 }
 
-.geography .emons-map__airplane {
+.geography .emons-map__airplane_01 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-animation-name: airplane;
-  animation-name: airplane;
-  -webkit-animation-duration: 15s;
-  animation-duration: 15s;
+  top: 80%;
+  left: 30%;
+  opacity: 0;
+  -webkit-animation-name: airplane1;
+  animation-name: airplane1;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
   -webkit-animation-iteration-count: infinite;
@@ -1222,105 +1223,96 @@ body {
   animation-timing-function: linear;
 }
 
-@-webkit-keyframes airplane {
+.geography .emons-map__airplane_04 {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  opacity: 0;
+  -webkit-animation-name: airplane4;
+  animation-name: airplane4;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes airplane1 {
   0% {
-    top: 50%;
-    left: 50%;
-  }
-  10% {
-    top: 70%;
-    left: 60%;
+    top: 80%;
+    left: 30%;
+    opacity: 0;
   }
   20% {
-    top: 50%;
-    left: 80%;
-  }
-  30% {
-    top: 30%;
-    left: 60%;
-  }
-  40% {
-    top: 40%;
-    left: 50%;
-  }
-  50% {
-    top: 50%;
-    left: 35%;
-  }
-  60% {
-    top: 35%;
-    left: 25%;
-  }
-  70% {
-    top: 45%;
-    left: 30%;
-  }
-  80% {
-    top: 60%;
-    left: 40%;
-  }
-  80% {
-    top: 70%;
-    left: 50%;
+    opacity: 1;
   }
   90% {
-    top: 60%;
-    left: 45%;
+    opacity: 1;
   }
   100% {
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 80%;
+    opacity: 0;
   }
 }
 
-@keyframes airplane {
+@keyframes airplane1 {
   0% {
-    top: 50%;
-    left: 50%;
-  }
-  10% {
-    top: 70%;
-    left: 60%;
+    top: 80%;
+    left: 30%;
+    opacity: 0;
   }
   20% {
-    top: 50%;
-    left: 80%;
-  }
-  30% {
-    top: 30%;
-    left: 60%;
-  }
-  40% {
-    top: 40%;
-    left: 50%;
-  }
-  50% {
-    top: 50%;
-    left: 35%;
-  }
-  60% {
-    top: 35%;
-    left: 25%;
-  }
-  70% {
-    top: 45%;
-    left: 30%;
-  }
-  80% {
-    top: 60%;
-    left: 40%;
-  }
-  80% {
-    top: 70%;
-    left: 50%;
+    opacity: 1;
   }
   90% {
-    top: 60%;
-    left: 45%;
+    opacity: 1;
   }
   100% {
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 80%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes airplane4 {
+  0% {
+    top: 80%;
+    left: 80%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 25%;
+    left: 30%;
+    opacity: 0;
+  }
+}
+
+@keyframes airplane4 {
+  0% {
+    top: 80%;
+    left: 80%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 25%;
+    left: 30%;
+    opacity: 0;
   }
 }
 
