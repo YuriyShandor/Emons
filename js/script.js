@@ -112,11 +112,10 @@ $(document).ready(function() {
   })
 
   // For Video Presentation Window
-  $('.video-presentation').fadeOut();
   $('.video-presentatio__btn').mousemove(function() {
-    $('.video-presentation').fadeIn();
+    $('.video-presentation').addClass('show');
   })
   $('.tv-image_close').click(function() {
-    $('.video-presentation').fadeOut();
+    $('.video-presentation').removeClass('show');
   })
 });

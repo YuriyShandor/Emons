@@ -1209,8 +1209,8 @@ body {
 .geography .emons-map__airplane {
   position: absolute;
   opacity: 0;
-  -webkit-animation-duration: 15s;
-  animation-duration: 15s;
+  -webkit-animation-duration: calc(15 * (1920 / 100vw));
+  animation-duration: calc(15 * (1920 / 100vw));
 }
 
 .geography .emons-map__airplane_01 {
@@ -1909,10 +1909,7 @@ body {
   top: 0;
   left: 0;
   z-index: 500;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1924,6 +1921,8 @@ body {
 .video-presentation__block {
   width: 75%;
   position: relative;
+  -webkit-box-shadow: 0px 0px 50px 30px #fffde8;
+  box-shadow: 0px 0px 50px 30px #fffde8;
 }
 
 .video-presentation__block .tv-image {
@@ -1949,8 +1948,10 @@ body {
 }
 
 .video-presentation.show {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (min-width: 1550px) {

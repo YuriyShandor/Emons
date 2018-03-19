@@ -16,8 +16,8 @@ body {
     &__airplane {
       position: absolute;
       opacity: 0;
-      -webkit-animation-duration: 15s;
-              animation-duration: 15s;
+      -webkit-animation-duration: calc(15 * (1920 / 100vw));
+              animation-duration: calc(15 * (1920 / 100vw));
     }
 
     &__airplane_01 {
@@ -502,10 +502,7 @@ body {
   top: 0;
   left: 0;
   z-index: 500;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -516,6 +513,8 @@ body {
   &__block {
     width: 75%;
     position: relative;
+    -webkit-box-shadow: 0px 0px 50px 30px rgba(255,253,232,1);
+            box-shadow: 0px 0px 50px 30px rgba(255,253,232,1);
 
     .tv-image {
       width: 100%;
@@ -541,8 +540,10 @@ body {
   }
 
   &.show {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
