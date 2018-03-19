@@ -5,7 +5,7 @@ $(document).ready(function() {
       $('.header-nav').addClass('header-nav_show');
     }
   });
-  $('section').click(function() {
+  $('body').click(function() {
     $('.header-nav').removeClass('header-nav_show');
   })
   $('.menu-icon').on('click', function() {
