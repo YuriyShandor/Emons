@@ -338,7 +338,7 @@ body {
     position: relative;
 
     .tv-image {
-      max-width: 100%;
+      width: 100%;
     }
 
     .tv-image_close {
@@ -346,13 +346,26 @@ body {
       width: 52px;
       position: absolute;
       top: 10%;
-      right: 5%;
+      right: 6%;
     }
   }
 
   &.show {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@media only screen and (min-width : 1550px) {
+  .video-presentation {
+    &__block {
+      width: 50%;
+
+      .tv-image_close {
+        width: 52px;
+        right: 6%;
+      }
+    }
   }
 }
 
@@ -375,7 +388,7 @@ body {
       .tv-image_close {
         width: 45px;
         top: 10%;
-        right: 5%;
+        right: 6%;
       }
     }
   }
@@ -389,7 +402,7 @@ body {
       .tv-image_close {
         width: 40px;
         top: 10%;
-        right: 5%;
+        right: 6%;
       }
     }
   }
@@ -403,7 +416,7 @@ body {
       .tv-image_close {
         width: 30px;
         top: 10%;
-        right: 5%;
+        right: 6%;
       }
     }
   }
