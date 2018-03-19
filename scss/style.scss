@@ -13,15 +13,18 @@ body {
   .emons-map {
     position: relative;
 
-    &__airplane_01 {
+    &__airplane {
       position: absolute;
-      top: 80%;
-      left: 30%;
       opacity: 0;
-      -webkit-animation-name: airplane1;
-              animation-name: airplane1;
       -webkit-animation-duration: 15s;
               animation-duration: 15s;
+    }
+
+    &__airplane_01 {
+      top: 80%;
+      left: 30%;
+      -webkit-animation-name: airplane1;
+              animation-name: airplane1;
       -webkit-animation-delay: 3s;
               animation-delay: 3s;
       -webkit-animation-iteration-count: infinite;
@@ -31,14 +34,10 @@ body {
     }
 
     &__airplane_04 {
-      position: absolute;
       top: 80%;
       left: 30%;
-      opacity: 0;
       -webkit-animation-name: airplane4;
               animation-name: airplane4;
-      -webkit-animation-duration: 15s;
-              animation-duration: 15s;
       -webkit-animation-delay: 4s;
               animation-delay: 4s;
       -webkit-animation-iteration-count: infinite;
@@ -143,10 +142,59 @@ body {
   }
 }
 
+@media only screen and (max-width : 1199px) {
+  .geography {
+    .emons-map {
+      &__airplane {
+        -webkit-animation-duration: 14s;
+                animation-duration: 14s;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width : 991px) {
   .geography {
     padding-bottom: 75px;
+
+    .emons-map {
+      &__airplane {
+        width: 34px;
+        -webkit-animation-duration: 12s;
+                animation-duration: 12s;
+      }
+    }
   }
+}
+
+@media only screen and (max-width : 767px) {
+  .geography {
+    .emons-map {
+      &__airplane {
+        width: 30px;
+        -webkit-animation-duration: 8s;
+                animation-duration: 8s;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 576px) {
+  .geography {
+    .emons-map {
+      &__airplane {
+        width: 20px;
+        -webkit-animation-duration: 5s;
+                animation-duration: 5s;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width : 991px) {
+
 }
 
 @media only screen and (max-width : 576px) {
@@ -477,8 +525,8 @@ body {
       cursor: pointer;
       width: 40px;
       position: absolute;
-      top: 12px;
-      right: 5px;
+      top: 9%;
+      right: 6.5%;
       z-index: 550;
     }
 
@@ -488,7 +536,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      background: url(../img/video-presentation__cover.png) no-repeat center / cover;
+      background: url(../img/video-presentation__cover_02.png) no-repeat center / cover;
     }
   }
 
@@ -505,8 +553,8 @@ body {
 
       .tv-image_close {
         width: 43px;
-        top: 12px;
-        right: 5px;
+        top: 9%;
+        right: 6%;
       }
     }
   }
@@ -530,8 +578,8 @@ body {
       width: 90%;
       .tv-image_close {
         width: 30px;
-        top: 10px;
-        right: 5px;
+        top: 9%;
+        right: 7%;
       }
     }
   }
@@ -544,8 +592,8 @@ body {
 
       .tv-image_close {
         width: 25px;
-        top: 10px;
-        right: 2px;
+        top: 9%;
+        right: 7%;
       }
     }
   }
@@ -558,8 +606,8 @@ body {
 
       .tv-image_close {
         width: 20px;
-        top: 5px;
-        right: 2px;
+        top: 9%;
+        right: 6%;
       }
     }
   }
